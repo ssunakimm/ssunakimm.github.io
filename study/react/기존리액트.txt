@@ -1,0 +1,91 @@
+import logo from './logo.svg';
+import './App.css';
+import { useState } from 'react';
+
+function App() {
+
+  let post = '강남 우동 맛집';
+  let [제목,setTitle] = useState(['남자 코트 추천','강남 우동 맛집','파이썬 독학']);
+  let [like, 변경함수] = useState(([0,0,0]));
+  let [modal, setModal] = useState(false);
+
+  var 어레이 = [2,3,4];
+  var newArray = 어레이.map(function(a){
+    return a * 10
+  });
+  console.log(newArray)
+function textChange(){
+  let copy = [...제목];
+  copy[0] = '여자 코트 추천'
+  setTitle(copy)
+}
+
+  return (
+    <div className="App">
+      <div className="black-nav" id={post}>
+        <h4>블로그</h4>
+      </div>
+      <span onClick={()=>{
+        let copy = [...제목];
+        copy[0] = '여자 코트 추천'
+        setTitle(copy)
+      }}>버튼</span>
+      <br/>
+      <span onClick={()=>{
+
+        var 어레이 = [...제목];
+
+        console.log(어레이.sort())
+        setTitle(어레이.sort())
+
+
+      }} className="btn">ㄱㄴㄷ순 정렬</span>
+
+      {
+         제목.map(function(a, i){
+          return(
+            <div className="list"  key={i}>
+              <h4 onClick={function(){setModal(true)}}>{제목[i]} <span onClick={ ()=>{ 
+                let copy = [...like];
+                copy[i] = copy[i] + 1
+                변경함수(copy)
+                console.log(copy)
+                } }>👍</span>  {like[i]}</h4>
+              <p>2월 17일 발행</p>
+            </div>
+          )          
+        })        
+      }
+
+      <List></List>
+      {
+        modal == true ? <Modal color={'yellow'} 작명={제목} textChange={textChange}/> : null
+      }
+
+    </div>
+  );
+}
+
+function Modal(props){
+  return (
+      <div className="modal" style={{background:props.color}}>
+        <h4>{props.작명[0]}</h4>
+        <p>날짜</p>
+        <p>상세내용</p>
+        <button onClick={()=>{
+          props.textChange();
+        }}>글수정</button>
+      </div>
+  )
+}
+function List(){
+  return (
+    <div className="list">
+        <h4>제목임둥~</h4>
+        <p>2월 17일 발행</p>
+      </div>
+  )
+}
+export default App;
+
+
