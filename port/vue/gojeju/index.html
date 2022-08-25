@@ -1,4 +1,4 @@
-<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>gojeju</title><script defer="defer" src="/js/chunk-vendors.cf184480.js"></script><script defer="defer" src="/js/app.6e3fddaa.js"></script><link href="/css/app.0dc039e1.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but gojeju doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=690cafe0559fae1b6885179a941d08f0"></script><script>setTimeout(function(){
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>gojeju</title><script defer="defer" src="/js/chunk-vendors.cf184480.js"></script><script defer="defer" src="/js/app.b7ff0b90.js"></script><link href="/css/app.1fedd46a.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but gojeju doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=690cafe0559fae1b6885179a941d08f0"></script><script>setTimeout(function(){
         
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = { 
@@ -7,7 +7,9 @@
         };
         var map = new kakao.maps.Map(mapContainer, mapOption); 
 
-        
-        
+        var markerPosition  = new kakao.maps.LatLng(33.450701, 126.570667); 
+        var marker = {
+            position: markerPosition
+        };
                 
       },1000)</script></body></html>
