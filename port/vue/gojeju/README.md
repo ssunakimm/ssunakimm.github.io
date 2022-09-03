@@ -1,8 +1,7 @@
 # 제주 관광 정보맵 만들기
 <br>
-<img src="https://www.notion.so/ssunakimm/d62020c129ed4e01942e47f94221ef9e#ccd054dfc4914c8fab9f35a90ea9d9ce">
 📌 URL<br>
-[링크](https://ssunakimm.github.io/port/vue/gojeju/index.html)
+[링크](https://ssunakimm.github.io/port/vue/gojeju/index.html)<br>
 [만든과정](https://www.notion.so/ssunakimm/d62020c129ed4e01942e47f94221ef9e)
 <br><br>
 
