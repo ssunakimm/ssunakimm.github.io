@@ -1,11 +1,11 @@
 # 제주 관광 정보맵 만들기
 <br>
 📌 URL<br>
-[링크](https://ssunakimm.github.io/port/vue/gojeju/index.html)<br>
+[데모페이지](https://ssunakimm.github.io/port/vue/gojeju/index.html)<br>
 [만든과정](https://www.notion.so/ssunakimm/d62020c129ed4e01942e47f94221ef9e)
 <br><br>
 
-📌 Summary<br>
+📌 개발 목표<br>
 제주도 관광 정보를 확인할 수 있는 웹사이트입니다.
 
 카카오 지도 api를 불러와서 제주도의 지도를 띄워주며,
@@ -20,7 +20,7 @@
 * [x] 라우터를 통한 상세페이지 이동
 <br><br>
 
-📌 Meaning<br>
+📌 느낀점<br>
 실제 사용되는 api를 key값으로 받아와 제작해본 웹사이트입니다.
 처음이라 api사용법이 어려웠으나 구글 검색을 통해 에러를 하나하나 해결해갈 수 있었습니다.
 vue 문법도 조금 더 알게되었으며, 라우터에 대해 공부할 수 있는 계기가 되었습니다.
@@ -28,8 +28,9 @@ api내 좋아요 정보나, 관광평점같은 것이 있으면 값 수정을 �
 초기 기획보다 사이트가 축소된 점이 아쉽습니다.
 <br><br>
 
-📌 Technology Stack<br>
-Frontend : Vue.js
+📌 사용 기술<br>
+Publishing : Html, Css, Media Query 
+Frontend : ES6, Vue.js 
 <br><br>
 
 📌 개발일정<br>
