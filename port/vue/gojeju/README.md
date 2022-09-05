@@ -29,7 +29,7 @@ api내 좋아요 정보나, 관광평점같은 것이 있으면 값 수정을 �
 <br><br>
 
 📌 사용 기술<br>
-Publishing : Html, Css, Media Query 
+Publishing : Html, Css, Media Query<br> 
 Frontend : ES6, Vue.js 
 <br><br>
 
