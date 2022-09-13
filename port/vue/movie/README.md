@@ -1,7 +1,7 @@
 # 영화 검색 및 추가 사이트 만들기
 <br>
 📌 URL<br>
-[데모페이지](https://ssunakimm.github.io/port/vue/movie/index.html)<br>
+[데모페이지](https://ssunakimm.github.io/port/vue/movie/)<br>
 [만든과정](https://www.notion.so/ssunakimm/d62020c129ed4e01942e47f94221ef9e)
 <br><br>
 
@@ -14,10 +14,12 @@
 <br><br>
 
 📌 주요 기능<br>
-* [x] 데이터 export
-* [x] 영화추가 기능(create)
-* [x] 리스트페이지 새로고침 (Read)
-* [x] 좋아요를 통한 수정 기능 (update)
+* [x] 데이터 Export O
+* [x] 영화추가 기능(Create)
+* [x] 리스트페이지 새로고침 (Read) O
+* [x] 리스트페이지 검색 (Search) O
+* [x] 리스트페이지 필터 (Filter) O
+* [x] 좋아요를 통한 수정 기능 (Update)
 * [x] 상세 페이지에서 휴지통 아이콘을 통한 삭제 기능 (Delete)
 <br><br>
 
