@@ -47,8 +47,7 @@
 import "./assets/css/style.css"
 import axios from 'axios';
 
-export default {
-  
+export default {  
   name: 'App',
   data(){
     return {
@@ -58,7 +57,6 @@ export default {
       category : ['관광지','맛집','숙박'],
       categoryOn : 0,
       modalShow : false
-
     }
   },
   mounted(){
@@ -74,8 +72,7 @@ export default {
     )
     
     //기본 카카오 맵 api
-    this.initMap(); 
-     
+    this.initMap();      
   },
   methods : {    
     initMap() {
@@ -95,7 +92,6 @@ export default {
           level: 9 
       };
       var map = new kakao.maps.Map(mapContainer, mapOption);
-
       
       var imageSrc = 'https://github.com/ssunakimm/ssunakimm.github.io/blob/main/port/vue/gojeju/img/icon_map.png?raw=true',  
           imageSize = new kakao.maps.Size(20, 25), 
@@ -103,9 +99,7 @@ export default {
       
       
       var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-          markerPosition  = new kakao.maps.LatLng(this.items[i].latitude, this.items[i].longitude); 
-
-      
+          markerPosition  = new kakao.maps.LatLng(this.items[i].latitude, this.items[i].longitude);       
 
       // 마커를 생성
       var marker = new kakao.maps.Marker({
@@ -152,7 +146,6 @@ export default {
 
       //클릭 시 인포윈도우 보여주기
       this.modalShow = true
-
       
     },
     categoryChange(i) {
@@ -175,20 +168,9 @@ export default {
 
           this.items = array;
           this.items.splice(9,90)
-
-
         }
       )
-
     }
-
   }
 }
-
-
 </script>
-
-
-<style>
-
-</style>
