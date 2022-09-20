@@ -9,14 +9,12 @@ const routes = [
         path: '/detail/:id',
         name : 'detail',
         component : Detail,
-        props: true,
-        
+        props: true,        
     }
 ]
 
-
 const router = new VueRouter({
-	mode:'history', //해쉬값 제거 방식
+    mode:'history', //해쉬값 제거 방식
     base : process.env.BASE_URL,
     routes
 });
