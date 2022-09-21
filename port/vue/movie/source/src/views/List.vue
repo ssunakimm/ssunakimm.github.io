@@ -46,8 +46,6 @@ export default {
   },
   computed: {
     filteredList() {
-      console.log('요기~~!')
-      console.log(this.$store.state.items)
       return this.$store.state.items.filter(item => {
         return item.movieName.toLowerCase().includes(this.search.toLowerCase()) ;
         
@@ -66,8 +64,6 @@ export default {
               this.$store.state.items = filterData              
               break;
             case 'rank' : //인기순 정렬
-            console.log(this.$store.state.items)
-            console.log(filterData)
               filterData.sort(function(a,b){
                 return a.rank - b.rank
               })
