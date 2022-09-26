@@ -2,6 +2,7 @@
 <br>
 📌 URL<br>
 [데모페이지]<https://ssunakimm.github.io/port/>
+[데모페이지]([링크주소](https://ssunakimm.github.io/port/)){: target="_blank"}
 <br><br>
 
 📌 개발 목표<br>
