@@ -134,6 +134,7 @@ img {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+input, textarea {font-family: "Noto Sans KR", sans-serif;}
 
 .main {width:100%;height:100vh;background-size:auto 100%;background-position: center center;}
 .main .info {position:absolute;bottom:5vw;left:3vw;right:3vw;}
@@ -145,7 +146,6 @@ img {
 
 .list {padding-bottom:10vw;}
 .list h3 {font-family: 'Kanit', sans-serif;;font-size: 2rem;padding:5vw;font-weight: 500;}
-
 .list .search {position:relative;margin-bottom:11vw;color:#fff;text-align: center;}
 .list .search input {width:88vw;max-width:100%;height:8vw;margin:0 auto;background:#081029;border-radius: 5px;color:#bababa;text-align: center;border:none;box-shadow: 0px 0px 5px rgb(255 255 255 / 20%);}
 .list .search .icon {position:absolute;top:50%;left:7vw;transform:translate(-50%,-50%);width:20px;height:20px;background:url('https://github.com/ssunakimm/ssunakimm.github.io/blob/main/port/vue/movie/img/icon_search.png?raw=true') no-repeat;background-size:cover;opacity: 0.4;}
@@ -178,7 +178,6 @@ img {
 .detail .movie .link a {display:block;width:2.75rem;height:2.75rem;background:#242298;border-radius:100%;text-indent:-9999px;font-size:0;box-shadow: 0px 0px 5px rgb(255 255 255 / 20%);}
 .detail .movie .link a:after {  position: absolute;  content: '';  width: 0;  height: 0;  border-bottom: 0.5rem solid transparent;  border-top: 0.5rem solid transparent;
   border-left: 0.75rem solid #fff;  border-right: 0.75rem solid transparent;  top: 50%;  left: 50%;  transform: translate(-18%,-50%);}
-
 .detail .actor {margin:5vw 5vw 0;padding:1.5rem 1.25rem;background:#1c1c3c;border-radius:7px;}
 .detail .actor .name {margin-bottom:1rem;font-size: 1.25rem;font-weight: 500;}
 .detail .actor ul {display:flex;flex-wrap:wrap}
@@ -187,10 +186,8 @@ img {
 .detail .actor ul li img {display:block;width:60px;margin:0 auto 1rem}
 .detail .del {position:fixed;left:0;right:0;bottom:0;display:block;padding:0.85rem 0;color:#fff;background:#017aff;text-align: center;}
 
-
 .add {padding-bottom:20vw;}
 .add h3 {font-family: 'Kanit', sans-serif;;font-size: 2rem;padding:5vw;font-weight: 500;}
-
 .add .write {padding:5vw;overflow: hidden;}
 .add .write b {display:block;margin-bottom: 1rem;font-weight: 500;}
 .add .write b span {color:#f9cf16}
@@ -217,7 +214,7 @@ img {
 
   .add .write {padding:2.5vw 5vw}
   .add .write input {max-height:48px;font-size:1rem}
-
+  .add .write textarea {font-size:1rem}
 }
 @media (min-width:1024px) {
   html, body {font-size:18px;}
@@ -226,10 +223,10 @@ img {
   .main .info .movie {max-width:350px;}
   .main .info .btn {max-width:350px;}
 
-  .list h3 {max-width:2030px;margin:0 auto;}
-  .list .search {max-width:1800px;margin:0 auto 5%}
+  .list h3 {max-width:1830px;margin:0 auto;}
+  .list .search {max-width:1600px;margin:0 auto 5%}
   .list .search select {right:0;bottom:-35px;}
-  .list article { display: flex; justify-content: space-between; flex-wrap: wrap; width:90%; max-width:1800px;margin:0 auto;}
+  .list article { display: flex; justify-content: space-between; flex-wrap: wrap; width:90%; max-width:1600px;margin:0 auto;}
   .list article a {width:47%;}
   .list .item {margin:0 0 13% 0;}
   .list .item img { left: 13%; width: 30%; height: auto; top: -17%;max-width:200px;}
@@ -237,4 +234,12 @@ img {
 
   .detail .bg {height:630px;background-position:center center;background-size:cover;}
   .detail .actor ul li img {width:100px;}
+  .detail .movie {max-width: 1600px;    margin: -3.5rem auto 0;}
+  .detail .actor {max-width:1600px;margin:5vw auto}
+
+  .add h3 {max-width:1600px;margin:0 auto;}
+  .add .write {max-width:1600px;margin:0 auto;}
+}
+@media (min-width:1600px) {
+  html, body {font-size:22px;}
 }

@@ -1,6 +1,6 @@
 export default [
    {
-      "id":110,
+      "id":0,
       "movieName":"알라딘(재개봉)",
       "startDate":"2019년 5월 23일",
       "openingDate" : "2019년 5월 23일",

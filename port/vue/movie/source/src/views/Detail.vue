@@ -54,7 +54,10 @@ export default {
     }    
     let idNum = this.idArray.findIndex(v => v == this.$route.query.num);
     this.$route.query.num = idNum    
-    this.synop = this.$store.state.items[idNum].synop 
+    this.synop = this.$store.state.items[idNum].synop
+    
+    
+    
   },
   mounted() {
     let copy = this.synop;
@@ -68,7 +71,8 @@ export default {
       let text2 = copy.slice(70, copy.length); //더보기버전
       this.textArray.push(text2);
       this.textArray.splice(1, 1);
-      this.btnMore = false //더보기버튼 숨기기      
+      this.btnMore = false //더보기버튼 숨기기
+      
     },
     delMovie(idNum){      
       const newItem = this.$store.state.items.filter((item) => {

@@ -77,7 +77,6 @@ export default {
   methods : {
     upload(e){
       let file = e.target.files; //클릭한 이미지
-      console.log(file)
       this.url = URL.createObjectURL(file[0]);
     },
     nullCheck : function(){  
@@ -123,7 +122,6 @@ export default {
           if (pvalue > cvalue) return pvalue;
           else return cvalue;
         }); 
-        console.log('maxId='+maxId)
 
       var newData = {
         "id":maxId+1,
@@ -146,7 +144,6 @@ export default {
         "youtube" : this.youtube
       };
       this.$store.state.items.push(newData);      
-      console.log(this.$store.state.items)
       this.$router.go(-1)
     }
   }
