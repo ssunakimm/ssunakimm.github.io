@@ -1,9 +1,7 @@
 # 포트폴리오
 <br>
 📌 URL<br>
-[데모페이지]<https://ssunakimm.github.io/port/>
-[데모페이지]([링크주소](https://ssunakimm.github.io/port/)){: target="_blank"}
-<a href="https://www.google.com/" target="_blank">새 탭에서 열기</a>
+[데모페이지](https://ssunakimm.github.io/port/)
 <br><br>
 
 📌 개발 목표<br>
