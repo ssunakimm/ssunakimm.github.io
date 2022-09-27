@@ -2,7 +2,7 @@
 # Todo List 만들기
 <br>
 📌 URL<br>
-[데모페이지](https://ssunakimm.github.io/port/react/todo/)<br>
+[데모페이지](https://ssunakimm.github.io/port/react/todo/index.html)<br>
 [만든과정](https://www.notion.so/ssunakimm/Vue-js-3d41da04a772476ab2f1cf125a207da6)
 <br><br>
 
