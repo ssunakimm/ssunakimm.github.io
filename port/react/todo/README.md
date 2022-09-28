@@ -3,7 +3,7 @@
 <br>
 📌 URL<br>
 [데모페이지](https://ssunakimm.github.io/port/react/todo/index.html)<br>
-[만든과정](https://www.notion.so/ssunakimm/Vue-js-3d41da04a772476ab2f1cf125a207da6)
+[만든과정](https://ssunakimm.notion.site/React-js-Todo-List-bea148c38f3e4b4394adcf77be4bc813)
 <br><br>
 
 📌 개발 목표<br>
