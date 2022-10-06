@@ -28,7 +28,7 @@
 6. 상세 페이지에서 삭제 (Delete)
 
 
-#### 오늘의 할일 기록 웹페이지 (https://github.com/ssunakimm/ssunakimm.github.io/tree/main/port/react/todo)
+#### 오늘의 할일 기록 웹페이지 (https://ssunakimm.github.io/port/react/todo/index.html)
 1. 기존 데이터 Export
 2. 할일 추가/삭제
 3. 완료된 경우 상태변경을 통한 체크표시
