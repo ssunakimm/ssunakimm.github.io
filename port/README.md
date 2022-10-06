@@ -42,8 +42,3 @@ Frontend : ES6, Vue.js,
 
 
 
-[링크이름](링크주소){: target="_blank"}
-<링크주소>{: target="_blank"}
-<a href="http://example.com/" target="_blank">example</a>
-
-
