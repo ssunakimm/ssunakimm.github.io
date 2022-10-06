@@ -13,13 +13,13 @@
 <br><br>
 
 📌 프로젝트<br>
-#### 제주도 관광 웹페이지
+#### 제주도 관광 웹페이지 (https://ssunakimm.github.io/port/vue/gojeju/index.html)
 1. 카카오 지도 api를 이용한 지도서비스
 2. 비짓제주 관광정보 OPEN API를 활용한 정보리스트
 3. 라우터를 통한 상세페이지 이동
 
 
-#### 영화 검색 웹페이지
+#### 영화 검색 웹페이지 (https://ssunakimm.github.io/port/vue/movie/)
 1. 데이터 Export
 2. 영화추가 기능(Create)
 3. 리스트페이지 새로고침 (Read)
@@ -28,13 +28,13 @@
 6. 상세 페이지에서 삭제 (Delete)
 
 
-#### 오늘의 할일 기록 웹페이지
+#### 오늘의 할일 기록 웹페이지 (https://github.com/ssunakimm/ssunakimm.github.io/tree/main/port/react/todo)
 1. 기존 데이터 Export
 2. 할일 추가/삭제
 3. 완료된 경우 상태변경을 통한 체크표시
 4. 완료도에 따른 Progress Circle 표시
 
-
+<br><br>
 📌 사용 기술<br>
 Publishing : Html, Css, Media Query<br> 
 Frontend : ES6, Vue.js, 
