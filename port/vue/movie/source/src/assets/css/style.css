@@ -220,8 +220,8 @@ input, textarea {font-family: "Noto Sans KR", sans-serif;}
   html, body {font-size:18px;}
   .main {background-size:cover}
   .main .info {top:50%;bottom:auto;left:10vw;right:auto;width:30vw;transform: translate(0,-50%);}
-  .main .info .movie {max-width:350px;}
-  .main .info .btn {max-width:350px;}
+  .main .info .movie {max-width:355px;}
+  .main .info .btn {max-width:355px;}
 
   .list h3 {max-width:1830px;margin:0 auto;}
   .list .search {max-width:1600px;margin:0 auto 5%}
