@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--파비콘-->
+    <link rel="shortcut icon" href="/resources/img/common/favicon.ico" />
+    <title>title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <link rel="stylesheet" href="/resources/css/style.css"/>    
+    <script src="/resources/js/jquery.min.js"></script>    
+    <title>Common UI</title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: Pretendard;
+        }
+
+        .title {
+            display: flex;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 30px;
+            justify-content: center;
+            margin: 30px auto 80px;
+        }
+
+        .table {
+            position: relative;
+            width:100%;
+            margin-bottom: 100px;
+            border: 1px solid #f5f5f5;
+        }  
+        
+        .table caption {
+            position: absolute;
+            top:-40px;
+            left: 0;
+            font-size: 1.25rem;
+        }
+
+        .table thead tr th {
+            padding: 10px 0;
+            text-align: center;
+            background: #f5f5f5 !important;
+            font-weight: bold;
+        }
+        .table thead tr th:nth-child(1) {
+            width: 25%;
+        }
+        .table thead tr th:nth-child(2) {
+            width: 35%;
+        }
+        .table thead tr th:nth-child(3), thead tr th:nth-child(4) {
+            width: 10%;
+        }
+
+        .table tbody tr:hover {
+            background-color:#fcfbfb;
+        }
+
+        .table tbody tr td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .table tbody tr td a {
+            color:rgb(96, 158, 250);
+            text-decoration: underline;
+        }
+
+        /* 버튼 클래스명 b1:완료 b2:진행중 b3:미진행 */        
+        button {
+            margin:0 auto;
+            width: 70px;
+            height: 30px;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 4px;
+            border: 0;
+            background-color: #f0f0f0;
+            color: #bdbdbd;
+        }
+
+        button:before {
+            content: "미진행";
+        }
+
+        button.b1{
+            background-color: #07a1ff;
+            color: #fff;
+        }
+
+        button.b1:before {
+            content: "완료";
+        }
+
+        button.b2 {
+            background-color: #b3e2ff;
+            color: #838383;
+        }
+
+        button.b2:before {
+            content: "진행중";
+        }
+
+        
+
+        
+
+        
+
+        .flex {
+            margin: 0 auto;
+            width: 1300px;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <span>Update : 2024-02-28</span>
+        <h1 class="title">HANDOK HARMONY</h1>
+        <table class="table">
+            <caption>메인 페이지</caption>
+            <thead>
+                <tr>
+                    <th>페이지명</th>
+                    <th>링크</th>
+                    <th>퍼블 상태</th>
+                    <th>검사 상태</th>
+                    <th>코멘트</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>메인 페이지</td>
+                    <td>
+                        <a target="_blank" href="./Views/Home/main.html">./Views/Home/main.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table">            
+            <caption>서브 페이지</caption>
+            <thead>
+                <tr>
+                    <th>페이지명</th>
+                    <th>링크</th>
+                    <th>퍼블 상태</th>
+                    <th>검사 상태</th>
+                    <th>코멘트</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>로그인(365이동)</td>
+                    <td>
+                        <a target="_blank"
+                            href="./Views/SubPage/harmonyLogin.html">./Views/SubPage/harmonyLogin.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>        
+
+        <table class="table">
+            <caption>공통 UI</caption>
+            <thead>
+                <tr>
+                    <th>페이지명</th>
+                    <th>링크</th>
+                    <th>퍼블 상태</th>
+                    <th>검사 상태</th>
+                    <th>코멘트</th>
+                </tr>
+            </thead>
+
+            <tbody>               
+                <tr>
+                    <td>Color</td>
+                    <td>
+                        <a target="_blank" href="./Views/Shared/Common/color.html"> ./Views/Shared/Common/color.html
+                        </a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Buttons</td>
+                    <td>
+                        <a target="_blank"
+                            href="./Views/Shared/Container__form/button.html">./Views/Shared/Container__form/button.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Selectors</td>
+                    <td>
+                        <a target="_blank"
+                            href="./Views/Shared/Container__form/selectors.html">./Views/Shared/Container__form/selectors.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>                
+
+                <tr>
+                    <td>Tab</td>
+                    <td>
+                        <a target="_blank" href="./Views/Shared/Common/tab.html">./Views/Shared/Common/tab.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>dropdown</td>
+                    <td>
+                        <a target="_blank"
+                            href="./Views/Shared/Common/dropDown.html">./Views/Shared/Common/dropDown.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>pagination</td>
+                    <td>
+                        <a target="_blank"
+                            href="./Views/Shared/Common/pagination.html">./Views/Shared/Common/pagination.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Modal</td>
+                    <td>
+                        <a target="_blank" href="./Views/Shared/Modal/modal.html">./Views/Shared/Modal/modal.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+
+                
+
+            </tbody>
+        </table>        
+    </div>    
+</body>
+
+</html>
