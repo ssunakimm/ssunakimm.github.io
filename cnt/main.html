@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
     <link rel="stylesheet" href="/resources/css/style.css"/>    
     <script src="/resources/js/jquery.min.js"></script>    
+    <script src="/resources/js/common.js"></script>    
 </head>
 <body>
     <header class="header">
@@ -96,11 +97,11 @@
                 <h1><a href=""><img src="resources/img/common/ico_logo.svg" alt="SAMSUNG C&T JAPAN"></a></h1>
                 <div class="menu">
                     <div class="icon icon_search"></div>
-                    <div class="icon icon_menu"></div>
+                    <div class="icon icon_menu" onclick="toggleGnb()"></div>
                 </div>
             </div>
             <div class="gnb_sub">
-                <button type="button" class="icon icon_close">CLOSE</button>
+                <button type="button" class="icon icon_close" onclick="toggleGnb()">CLOSE</button>
                 <ul>
                     <li>
                         <div class="depth1">
@@ -110,7 +111,7 @@
                     <li>
                         <div class="depth1">
                             <a href="">会社概要</a>
-                            <button type="button" class="icon icon_toggle">menu_close</button>
+                            <button type="button" class="icon icon_toggle" onclick="toggleGnbSub(this)">menu_close</button>
                         </div>
                         <ul class="depth2">
                             <li><a href="">会社概要</a></li>
@@ -125,7 +126,7 @@
                     <li>
                         <div class="depth1">
                             <a href="">事業紹介</a>
-                            <button type="button" class="icon icon_toggle">menu_close</button>
+                            <button type="button" class="icon icon_toggle" onclick="toggleGnbSub(this)">menu_close</button>
                         </div>
                         <ul class="depth2">
                             <li><a href="">化学</a></li>
@@ -137,7 +138,7 @@
                     <li>
                         <div class="depth1">
                             <a href="">サステナビリティ</a>
-                            <button type="button" class="icon icon_toggle">menu_close</button>
+                            <button type="button" class="icon icon_toggle" onclick="toggleGnbSub(this)">menu_close</button>
                         </div>
                         <ul class="depth2">
                             <li><a href="">環境</a></li>
@@ -148,7 +149,7 @@
                     <li>
                         <div class="depth1">
                             <a href="">採用情報</a>
-                            <button type="button" class="icon icon_toggle">menu_close</button>
+                            <button type="button" class="icon icon_toggle" onclick="toggleGnbSub(this)">menu_close</button>
                         </div>
                         <ul class="depth2">
                             <li><a href="">キャリアガイド</a></li>
@@ -160,7 +161,7 @@
                     <li>
                         <div class="depth1">
                             <a href="">PR</a>
-                            <button type="button" class="icon icon_toggle">menu_close</button>
+                            <button type="button" class="icon icon_toggle" onclick="toggleGnbSub(this)">menu_close</button>
                         </div>
                         <ul class="depth2">
                             <li><a href="">ニュース</a></li>
@@ -183,10 +184,10 @@
                 <div class="title">トレーディングと環境に やさしい事業開発を通して 社会に寄与していきます。</div>
                 <div class="sub">グローバル市場にて、産業における専門性に基づき、市場の変化に対応し、付加価値を生み出すことで、顧客により良い価値を提供していきます。</div>
                 <ul>
-                    <li><img src="resources/img/main/icon_overview.svg" alt="" title="" />会社概要</li>
-                    <li><img src="resources/img/main/icon_philsophy.svg" alt="" title="" />企業理念</li>
-                    <li><img src="resources/img/main/icon_message.svg" alt="" title="" />社長メッセージ</li>
-                    <li><img src="resources/img/main/icon_history.svg" alt="" title="" />沿革</li>
+                    <li><div class="icon"><img src="resources/img/main/icon_info1.svg" alt="" title="" /></div>会社概要</li>
+                    <li><div class="icon"><img src="resources/img/main/icon_info2.svg" alt="" title="" /></div>企業理念</li>
+                    <li><div class="icon"><img src="resources/img/main/icon_info3.svg" alt="" title="" /></div>社長メッセージ</li>
+                    <li><div class="icon"><img src="resources/img/main/icon_info4.svg" alt="" title="" /></div>沿革</li>
                 </ul>
             </div>
             
@@ -198,21 +199,37 @@
             </article>
             <ul>
                 <li>
+                    <div class="img">
+                        <img src="/resources/img/main/img_company1.jpg" alt="" title="">
+                        <span>chemical</span>
+                    </div>
                     <b>化学</b>
                     <div>化学事業は、サムスン物産の インフラとグローバルネットワークを通じた 化学品全般のトレーディングにより、 お客様のニーズに応えながら付加価値の 高いソリューションを提供いたします。</div>
                     <a href="">Learn more</a>
                 </li>
                 <li>
+                    <div class="img">
+                        <img src="/resources/img/main/img_company2.jpg" alt="" title="">
+                        <span>chemical</span>
+                    </div>
                     <b>鉄鋼</b>
                     <div>鉄鋼事業は、50年以上にわたる 鉄鋼トレーディングの 経験と長年培ったノウハウや業界知識を持ち、  30か国以上に及ぶ幅広い地域や分野で 事業を展開しています。</div>
                     <a href=""></a>
                 </li>
                 <li>
+                    <div class="img">
+                        <img src="/resources/img/main/img_company3.jpg" alt="" title="">
+                        <span>chemical</span>
+                    </div>
                     <b>素材</b>
                     <div>素材事業は、高品質、高性能な技術優位性の 高い日本の電子部品・素材を サムスングループ及び協力会社様へ提供してい ます。また、サムスングループ以外の海外企業との取引及び韓国本社と連携した Re-Marketing / Recycle事業、半導体素材の 現地化事業など、幅広い事業を行っています。</div>
                     <a href=""></a>
                 </li>
                 <li>
+                    <div class="img">
+                        <img src="/resources/img/main/img_company4.jpg" alt="" title="">
+                        <span>chemical</span>
+                    </div>
                     <b>エネルギー</b>
                     <div>エネルギー事業は、未来に向けた持続可能な 社会の実現を目指し、再生可能エネルギーに 関わる事業に取り組んでいます。</div>
                     <a href=""></a>
