@@ -12,6 +12,7 @@
     <title>Common UI</title>
     <style>
         body {
+            font-size: 14px;
             padding: 20px;
             font-family: Pretendard;
         }
@@ -46,10 +47,10 @@
             font-weight: bold;
         }
         .table thead tr th:nth-child(1) {
-            width: 25%;
+            width: 20%;
         }
         .table thead tr th:nth-child(2) {
-            width: 35%;
+            width: 30%;
         }
         .table thead tr th:nth-child(3), thead tr th:nth-child(4) {
             width: 10%;
@@ -69,7 +70,7 @@
             text-decoration: underline;
         }
 
-        /* 버튼 클래스명 b1:완료 b2:진행중 b3:미진행 */        
+        /* 버튼 클래스명 b1:진행중 b2:수정중 b3:완료 */        
         button {
             margin:0 auto;
             width: 70px;
@@ -92,7 +93,7 @@
         }
 
         button.b1:before {
-            content: "완료";
+            content: "진행중";
         }
 
         button.b2 {
@@ -101,14 +102,17 @@
         }
 
         button.b2:before {
-            content: "진행중";
+            content: "완료";
+        }
+        
+        button.b3 {
+            background-color: #b3e2ff;
+            color: #838383;
         }
 
-        
-
-        
-
-        
+        button.b3:before {
+            content: "수정중";
+        }
 
         .flex {
             margin: 0 auto;
@@ -122,8 +126,8 @@
 
 <body>
     <div class="flex">
-        <span>Update : 2024-02-28</span>
-        <h1 class="title">HANDOK HARMONY</h1>
+        <span>Update : 2024-03-17</span>
+        <h1 class="title">상사부문 동경법인 퍼블리싱</h1>
         <table class="table">
             <caption>메인 페이지</caption>
             <thead>
@@ -138,22 +142,22 @@
 
             <tbody>
                 <tr>
-                    <td>메인 페이지</td>
+                    <td>메인 페이지(HOME)</td>
                     <td>
-                        <a target="_blank" href="./Views/Home/main.html">./Views/Home/main.html</a>
+                        <a target="_blank" href="./main.html">./main.html</a>
+                    </td>
+                    <td>
+                        <button class="b2"></button>
                     </td>
                     <td>
                         <button class=""></button>
                     </td>
-                    <td>
-                        <button class=""></button>
-                    </td>
-                    <td></td>
+                    <td>事業紹介 애니메이션, 버튼링크들 제외 퍼블 완료</td>
                 </tr>
             </tbody>
         </table>
 
-        <table class="table">            
+        <!--table class="table">            
             <caption>서브 페이지</caption>
             <thead>
                 <tr>
@@ -302,7 +306,7 @@
                 
 
             </tbody>
-        </table>        
+        </table-->        
     </div>    
 </body>
 
