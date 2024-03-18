@@ -25,3 +25,31 @@ h2 {font-size: 1.5em;}
 h3 {font-size: 1.17em;}
 h4 {font-size: 1em;}
 h5 {font-size: 0.83em;}
+
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--basic-dark-navy);
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+/* svg */
+.layout__page .l-main .l-aside .aside-toggle-btn i {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('data:image/svg+xml,%3Csvg width="24" height="24"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M3 18H16V16H3V18ZM3 13H13V11H3V13ZM3 6V8H16V6H3ZM21 15.59L17.42 12L21 8.41L19.59 7L14.59 12L19.59 17L21 15.59Z" fill="%23888888"/%3E%3C/svg%3E%0A') no-repeat 0 0px / contain;
+}
