@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--파비콘-->
+    <link rel="shortcut icon" href="/resources/img/common/favicon.ico" />
+    <title>title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <link rel="stylesheet" href="/resources/css/style.css"/>    
+    <script src="/resources/js/jquery.min.js"></script>    
+    <title>Common UI</title>
+    <style>
+        body {
+            font-size: 14px;
+            padding: 20px;
+            font-family: Pretendard;
+        }
+
+        .title {
+            display: flex;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 30px;
+            justify-content: center;
+            margin: 30px auto 80px;
+        }
+
+        .table {
+            position: relative;
+            width:100%;
+            margin-bottom: 100px;
+            border: 1px solid #f5f5f5;
+        }  
+        
+        .table caption {
+            position: absolute;
+            top:-40px;
+            left: 0;
+            font-size: 1.25rem;
+        }
+
+        .table thead tr th {
+            padding: 10px 0;
+            text-align: center;
+            background: #f5f5f5 !important;
+            font-weight: bold;
+        }
+        .table thead tr th:nth-child(1) {
+            width: 8%;
+        }
+        .table thead tr th:nth-child(2) {
+            width: 15%;
+        }
+        .table thead tr th:nth-child(3) {
+            width: 11%;
+        }
+        .table thead tr th:nth-child(4) {
+            width: 15%;
+        }
+        .table thead tr th:nth-child(5) {
+            width: 23%;
+        }
+        .table thead tr th:nth-child(6) {
+            width: 7%;
+        }
+        .table thead tr th:nth-child(7) {
+            width: 7%;
+        }
+        .table thead tr th:nth-child(8) {
+            width: 14%;
+        }
+
+        table tbody tr td:nth-child(1) {
+            font-weight: bold;;
+
+        }
+        .table tbody tr:hover {
+            background-color:#fcfbfb;
+        }
+
+        .table tbody tr td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .table tbody tr td a {
+            color:rgb(96, 158, 250);
+            text-decoration: underline;
+        }
+
+        /* 버튼 클래스명 b1:진행중 b2:수정중 b3:완료 */        
+        button {
+            margin:0 auto;
+            width: 70px;
+            height: 30px;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 4px;
+            border: 0;
+            background-color: #f0f0f0;
+            color: #bdbdbd;
+        }
+
+        button:before {
+            content: "미진행";
+        }
+
+        button.b1{
+            background-color: #07a1ff;
+            color: #fff;
+        }
+
+        button.b1:before {
+            content: "진행중";
+        }
+
+        button.b2 {
+            background-color: #b3e2ff;
+            color: #838383;
+        }
+
+        button.b2:before {
+            content: "수정중";
+        }
+        
+        button.b3 {
+            background-color: #b3e2ff;
+            color: #838383;
+        }
+
+        button.b3:before {
+            content: "완료";
+        }
+
+        .flex {
+            margin: 0 auto;
+            width: 1600px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <span>Update : 2024-03-17</span>
+        <h1 class="title">상사부문 동경법인 퍼블리싱</h1>        
+
+        <table class="table">
+            <caption>퍼블리싱 페이지</caption>
+            <thead>
+                <tr>
+                    <th>1Depth</th>
+                    <th>2Depth</th>
+                    <th>3Depth</th>
+                    <th>페이지명</th>
+                    <th>링크</th>
+                    <th>퍼블리싱</th>
+                    <th>확인</th>
+                    <th>코멘트</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Home</td>
+                    <td></td>
+                    <td></td>
+                    <td>삼성물산 법인 메인</td>
+                    <td><a href="/html/main.html" target="_blank"> /html/main.html</a></td>
+                    <td><button class="b2"></button></td>
+                    <td></td>
+                    <td>버튼링크들 제외 퍼블 완료</td>
+                </tr>
+                <tr>
+                    <td>About Us</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Corporate Profile</td>
+                    <td></td>
+                    <td>법인 기업 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Message from the CEO</td>
+                    <td></td>
+                    <td>법인장 인사말</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Our Philosophy</td>
+                    <td></td>
+                    <td>법인 비전 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>History</td>
+                    <td></td>
+                    <td>법인 연혁 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Office Locations</td>
+                    <td></td>
+                    <td>법인 사업장 정보(본사, 사업장)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Contact Us</td>
+                    <td></td>
+                    <td>법인 문의 등록 (일반문의, 사업문의)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Business</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Chemicals</td>
+                    <td></td>
+                    <td>Chemicals 상세 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Steel</td>
+                    <td></td>
+                    <td>Steel 상세 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Electronic Materials</td>
+                    <td></td>
+                    <td>Materials 소재 상세 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Energy</td>
+                    <td></td>
+                    <td>Energy 상세 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>CSR</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>CSR Activities</td>
+                    <td></td>
+                    <td>법인 사회공헌활동 상세 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>SCT CSR</td>
+                    <td></td>
+                    <td>삼성물산 본사 사회공헌활동 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Careers</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Career Guide</td>
+                    <td></td>
+                    <td>법인 채용 안내 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>What we look for</td>
+                    <td></td>
+                    <td>법인 인재상 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Recruitment Procedure</td>
+                    <td>New Graduates</td>
+                    <td>채용 프로세스</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Experience Hire</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Q&amp;A</td>
+                    <td></td>
+                    <td>채용 문의 등록</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>PR</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>News</td>
+                    <td>News List</td>
+                    <td>News 목록 (법인, 본사)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>News Detail</td>
+                    <td>News 상세정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Corporate Media</td>
+                    <td></td>
+                    <td>법인 홍보영상, 미디어 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Financial Information</td>
+                    <td></td>
+                    <td>삼성물산 본사 실적 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Search</td>
+                    <td></td>
+                    <td></td>
+                    <td>검색 결과 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td></td>
+                    <td></td>
+                    <td>언어 선택</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>SAMSUNG C&amp;T</td>
+                    <td></td>
+                    <td></td>
+                    <td>삼성물산 상사 사이트로 이동</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>GLOBAL NETWORK</td>
+                    <td></td>
+                    <td></td>
+                    <td>삼성물산 상사 Global Network 로 이동</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Japan Network</td>
+                    <td></td>
+                    <td></td>
+                    <td>지역 네트워크</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>PRIVACY POLICY</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>LEGAL NOTICE</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>NEWS</td>
+                    <td></td>
+                    <td></td>
+                    <td>삼성물산 상사 Media Center 로 이동</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>GLOBAL NETWORK</td>
+                    <td></td>
+                    <td></td>
+                    <td>삼성물산 상사 Global Network 로 이동</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>CSR</td>
+                    <td></td>
+                    <td></td>
+                    <td>삼성물산 상사 CSR 로 이동</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Financial Information</td>
+                    <td></td>
+                    <td></td>
+                    <td>삼성물산 본사 실적 정보</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>     
+
+        <!--table class="table">
+            <caption>공통 UI</caption>
+            <thead>
+                <tr>
+                    <th>페이지명</th>
+                    <th>링크</th>
+                    <th>퍼블 상태</th>
+                    <th>검사 상태</th>
+                    <th>코멘트</th>
+                </tr>
+            </thead>
+
+            <tbody>               
+                <tr>
+                    <td>Color</td>
+                    <td>
+                        <a target="_blank" href="./Views/Shared/Common/color.html"> ./Views/Shared/Common/color.html
+                        </a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Buttons</td>
+                    <td>
+                        <a target="_blank" href="./Views/Shared/Container__form/button.html">./Views/Shared/Container__form/button.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Selectors</td>
+                    <td>
+                        <a target="_blank" href="./Views/Shared/Container__form/selectors.html">./Views/Shared/Container__form/selectors.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>                
+
+                <tr>
+                    <td>Tab</td>
+                    <td>
+                        <a target="_blank" href="./Views/Shared/Common/tab.html">./Views/Shared/Common/tab.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>dropdown</td>
+                    <td>
+                        <a target="_blank" href="./Views/Shared/Common/dropDown.html">./Views/Shared/Common/dropDown.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>pagination</td>
+                    <td>
+                        <a target="_blank" href="./Views/Shared/Common/pagination.html">./Views/Shared/Common/pagination.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Modal</td>
+                    <td>
+                        <a target="_blank" href="./Views/Shared/Modal/modal.html">./Views/Shared/Modal/modal.html</a>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td>
+                        <button class=""></button>
+                    </td>
+                    <td></td>
+                </tr>               
+
+            </tbody>
+        </table-->
+    </div>
+</body>
+
+</html>

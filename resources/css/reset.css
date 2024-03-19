@@ -1,0 +1,48 @@
+﻿@charset "UTF-8";
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, ol, ul, li, samp, small, span, var, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, dl, dt, dd{margin:0;padding:0;border:0;font-style:normal;font-variant:normal;font-weight:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;line-height:150%}
+input, select{margin:0;padding:0;font-style:normal;font-variant:normal;font-weight:inherit;font-size:100%;font-family:inherit;line-height:100%}
+legend {display:none;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
+html, body{min-width:320px;font-family:'Noto Sans JP';-webkit-text-size-adjust:none;font-size: 10px;font-weight:400;color:#333;}
+li{list-style:none}
+blockquote, q{quotes:'"' '"'}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+address{font-style:normal}
+input, select, button, img{vertical-align:middle;outline:none;}
+input::placeholder {color:var(--grey04)}
+button{display:block;margin:0;padding:0;border:0;background-color:transparent;font:inherit;color:inherit;cursor:pointer}
+a{font-size:inherit;color:inherit;text-decoration:none}
+strong, em{font-size:inherit;line-height:inherit}
+textarea{vertical-align:middle}
+textarea:focus {outline: none;}
+dd {margin-left: 0;}
+h1,h2,h3,h4,h5 {margin-top:0;margin-bottom:0;}
+h1 {font-size:2em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.17em;}
+h4 {font-size: 1em;}
+h5 {font-size: 0.83em;}
+
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--basic-dark-navy);
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-corner {
+    background-color: transparent;
+}

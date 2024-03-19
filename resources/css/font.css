@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+/* Noto Sans JP */
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 100;
+	font-display: swap;
+    src: local('Noto Sans JP Thin'), local('Noto Sans JP-Thin'), url('/resources/font/NotoSansJP-Thin.woff') format('woff') ;
+}
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 300;
+	font-display: swap;
+    src: local('Noto Sans JP Light'), local('Noto Sans JP-Light'), url('/resources/font/NotoSansJP-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+	font-display: swap;
+    src: local('Noto Sans JP Regular'), local('Noto Sans JP-Regular'), url('/resources/font/NotoSansJP-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 500;
+	font-display: swap;
+    src: local('Noto Sans JP Medium'), local('Noto Sans JP-Medium'), url('/resources/font/NotoSansJP-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+	font-display: swap;
+    src: local('Noto Sans JP Bold'), local('Noto Sans JP-Bold'), url('/resources/font/NotoSansJP-Bold.woff') format('woff');
+}
+
+/* Pretendard */
+@font-face {
+	font-family: 'Pretendard';
+    font-style: normal;
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('/resources/font/Pretendard-Thin.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+    font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('/resources/font/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+    font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('/resources/font/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+    font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('/resources/font/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('/resources/font/Pretendard-Bold.woff') format('woff');
+}
