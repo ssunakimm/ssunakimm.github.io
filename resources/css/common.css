@@ -3,9 +3,7 @@
     display: none;
 }
 
-.no_scroll {
-    overflow-y: hidden;
-}
+
 .dim {
     display: none;
     position: fixed;

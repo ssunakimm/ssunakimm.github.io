@@ -40,6 +40,8 @@ $(document).ready(function(){
             $('.header .gnb.web .gnb_sub > div .img').removeClass('none');
         });
     });
+
+    
 });
 
 /* 
@@ -146,4 +148,10 @@ function toggleMenuWeb(type){
 
 }
 
+/* 
+    드롭다운 클릭시 텍스트 변경
+ */
+const dropdownSelect = (e) => {
+   $(e).parent().prev().text($(e).children().text());
+};
 
