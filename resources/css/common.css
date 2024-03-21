@@ -198,7 +198,7 @@
     padding: 55px 24px 56px 24px;
     font-size: 1.6rem;
     line-height: 250%;
-    background: #F2F6FF;
+    background: var(--basic-light-blue);
     z-index: 99;
 }
 .header .gnb.mobile .gnb_search div {
@@ -308,7 +308,7 @@
     margin: 0 auto;
     font-size: 1.4rem;
     line-height: 160%;
-    color: #5D626C;
+    color: var(--title_grey);
     text-align: center;
     word-break: keep-all;
 }
@@ -791,7 +791,7 @@
         width: 100%;
         height: auto !important;
         padding: 2.552vw 9.375vw 3.072vw 15.625vw;
-        background-color: #F2F6FF;
+        background-color: var(--basic-light-blue);
         box-sizing: border-box;
         z-index: 99;
     }
@@ -919,7 +919,7 @@
         left: 0;
         right: 0;
         padding: 4.1145vw 0 4.3229vw;
-        background: #F2F6FF;
+        background: var(--basic-light-blue);
         z-index: 99;
     }
     .header .gnb.web .gnb_search div {

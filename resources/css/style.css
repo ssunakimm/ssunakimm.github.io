@@ -7,11 +7,14 @@
 
 
 :root {
-    --basic_blue: #004098;
     --white : #fff;
-    --title_navy : #131B2C;
-    --title_error : red;
+    --black : #000;
+    --basic_blue: #004098;
+    --basic-light-blue : #F2F6FF; /* 추가*/
     --basic-dark-navy : #131B2C;
+    --title_navy : #131B2C;
+    --title_grey : #5D626C;
+    --title_error : red;
     --grey01 : #6B6E72;
     --grey04 : #B3B5B9;
 }
