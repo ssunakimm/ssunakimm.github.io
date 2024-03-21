@@ -10,6 +10,18 @@ $(document).ready(function(){
     body = $('body');
     dim = $('.dim');
 
+    
+    $(document).on('mouseover', '.header .gnb.web .gnb_main ul li a', function(){
+        let index = $(this).parent().index();
+        mouseToggleMenuWeb('open', index);
+        
+    });
+
+    $(document).on('mouseleave', '.header .gnb.web', function(){
+        mouseToggleMenuWeb('close')
+    });
+
+
     // let previousScrollTop;
     // $(window).scroll(function() {
     //     const scrollTop = $(window).scrollTop();
@@ -24,23 +36,6 @@ $(document).ready(function(){
       
     //     previousScrollTop = scrollTop;
     //   });
-
-    // gnb 효과
-    $('.header .gnb.web .gnb_main ul li a').on("mouseover", function() {
-            let index = $(this).parent().index();
-            $('.header .gnb.web .gnb_sub').stop().slideDown(350);
-        
-            $('.header .gnb.web .gnb_sub > div').hide();
-            $('.header .gnb.web .gnb_sub > div').eq(index).fadeIn();
-            $('.header .gnb.web .gnb_sub > div').eq(index).css('display','flex');    
-    });
-    $('.header .gnb.web').on("mouseleave", function() {
-        $('.header .gnb.web .gnb_sub > div .img').addClass('none');
-        $('.header .gnb.web .gnb_sub').stop().fadeOut(350, function() {
-            $('.header .gnb.web .gnb_sub > div .img').removeClass('none');
-        });
-    });
-
     
 });
 
@@ -72,6 +67,7 @@ function toggleGnbMobile(type){
     모바일용 GNB MENU Show / hide
  */
 function toggleGnbMenuMobile(e){
+    toggleSearchMobile('close');
     let gnbSubDepth1 = $('.gnb.mobile .gnb_sub .depth1');
     let thisNode = $(e);
     let gnbSubDepth2 = thisNode.next();
@@ -107,6 +103,7 @@ function toggleSearchMobile(type){
     type : open / hide
  */
 function toggleSearchWeb(type){
+    mouseToggleMenuWeb('close');
     let search= $('.header .gnb.web .gnb_search');
     let btnSearch= $('.header .gnb.web .gnb_main .menu .icon_search');
     let btnSearchClose= $('.header .gnb.web .gnb_main .menu .icon_close');
@@ -128,6 +125,7 @@ function toggleSearchWeb(type){
     type : open / hide
  */
 function toggleMenuWeb(type){
+    toggleSearchWeb('close')
     if(type == 'open'){      
         body.addClass('no_scroll');
         dim.show();
@@ -143,10 +141,34 @@ function toggleMenuWeb(type){
                 
             });
         });
-    }     
-
-
+    }    
 }
+
+/* 
+    웹용 GNB  Mouseover / Mouseleave
+    type : open / hide
+ */
+    function mouseToggleMenuWeb(type, index){
+        if(type == 'open'){      
+            $('.header .gnb.web .gnb_sub').stop().slideDown(350);
+    
+            $('.header .gnb.web .gnb_sub > div').hide();
+            $('.header .gnb.web .gnb_sub > div').eq(index).fadeIn();
+            $('.header .gnb.web .gnb_sub > div').eq(index).css('display','flex'); 
+            dim.show();
+        }else {      
+            $('.header .gnb.web .gnb_sub > div .img').addClass('none');
+            $('.header .gnb.web .gnb_sub').stop().fadeOut(350, function() {
+                $('.header .gnb.web .gnb_sub > div .img').removeClass('none');
+            }); 
+
+            let search= $('.header .gnb.web .gnb_search');
+            if(!search.is(':visible')){
+                dim.hide();
+
+            }
+        }    
+    }
 
 /* 
     드롭다운 클릭시 텍스트 변경

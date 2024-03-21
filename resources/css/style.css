@@ -15,6 +15,9 @@
     --title_navy : #131B2C;
     --title_grey : #5D626C;
     --title_error : red;
+    --pastel_blue : #F2F6FD;
     --grey01 : #6B6E72;
+    --grey02 : #8C9299;
     --grey04 : #B3B5B9;
+    --gradient_blue : linear-gradient(270deg, #3973D1 0%, #004098 100%)
 }
