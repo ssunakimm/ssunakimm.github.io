@@ -17,7 +17,7 @@
       span:nth-child(3) {flex-basis: 12%;}
       span:nth-child(4) {flex-basis: 17%;}
       span:nth-child(5) {flex-basis: 46%;}
-      .color em {display: block;width: 40px;height: 40px;border-radius: 8px;box-shadow: var(--shadow_default);}
+      .color em {display: block;width: 40px;height: 40px;border-radius: 8px;box-shadow: 0px 4px 8px rgba(81, 93, 123, 0.12);}
       .name {font-weight: bold;}
     </style>
   </head>
@@ -31,345 +31,61 @@
         <span>Name</span>
         <span>Usage</span>
       </li>
-      <li></li>
+      <li>
+        <span></span>
+        <span class="color"><em style="background-color:#fff"></em></span>
+        <span class="name">#FFFFFF</span>
+        <span class="usage">var(--color_white)</span>
+      </li>
+      <li>
+        <span></span>
+        <span class="color"><em style="background-color:#004098"></em></span>
+        <span class="name">#004098</span>
+        <span class="usage">var(--basic_blue)</span>
+      </li>
+      <li>
+        <span></span>
+        <span class="color"><em style="background-color:#F2F6FF"></em></span>
+        <span class="name">#F2F6FF</span>
+        <span class="usage">var(--basic-light-blue)</span>
+      </li>
+      <li>
+        <span></span>
+        <span class="color"><em style="background-color:#131B2C"></em></span>
+        <span class="name">#131B2C</span>
+        <span class="usage">var(--basic-dark-navy)</span>
+      </li>
+      <li>
+        <span></span>
+        <span class="color"><em style="background-color:#131B2C"></em></span>
+        <span class="name">#131B2C</span>
+        <span class="usage">var(--title_navy)</span>
+      </li>
+      <li>
+        <span></span>
+        <span class="color"><em style="background-color:#FF0000"></em></span>
+        <span class="name">#FF0000</span>
+        <span class="usage">var(--title_error)</span>
+      </li>
+      <li>
+        <span></span>
+        <span class="color"><em style="background-color:#5D626C"></em></span>
+        <span class="name">#5D626C</span>
+        <span class="usage">var(--title_grey)</span>
+      </li>
+      <li>
+        <span></span>
+        <span class="color"><em style="background-color:#6B6E72"></em></span>
+        <span class="name">#6B6E72</span>
+        <span class="usage">var(--grey01)</span>
+      </li>
+      <li>
+        <span></span>
+        <span class="color"><em style="background-color:#B3B5B9"></em></span>
+        <span class="name">#B3B5B9</span>
+        <span class="usage">var(--grey04)</span>
+      </li>
     </ul>
 
-    <!-- Process Status Colors -->
-    <h1>Process Status Colors</h1>
-    <ul id="process-status-color">
-      <li>
-        <span></span>
-        <span>Color</span>
-        <span>Name</span>
-        <span>Usage</span>
-      </li>
-      <li></li>
-    </ul>
-    <!-- Status Colors -->
-    <h1>Status Colors</h1>
-    <ul id="status-color">
-      <li>
-        <span></span>
-        <span>Color</span>
-        <span>Name</span>
-        <span>Usage</span>
-      </li>
-      <li></li>
-    </ul>
-    <!-- Etc Colors -->
-    <h1>Etc</h1>
-    <ul id="etc-color">
-      <li>
-        <span></span>
-        <span>Color</span>
-        <span>Name</span>
-        <span>Usage</span>
-      </li>
-      <li></li>
-    </ul>
-    <!-- New Colors -->
-    <h1>New</h1>
-    <ul id="new-color">
-      <li>
-        <span></span>
-        <span>Color</span>
-        <span>Name</span>
-        <span>Usage</span>
-      </li>
-      <li></li>
-    </ul>
-    <script>
-      const colorDatas = [
-        {
-          color: "#FFFFFF",
-          name: "General / White - FFFFFF",
-          usage: `For basic needs, can be used as background, text color or any other design element or pattern`,
-          css: `var(--color_white)`,
-        },
-        {
-          color: "#D2D2D4",
-          name: `General / BG - D2D2D4`,
-          usage: `Main Page Background`,
-          css: `var(--color_general_bg)`,
-        },
-        {
-          color: "#00A88F",
-          name: "Primary - 00A88F",
-          usage: `Primary buttons, elements in focus`,
-          css: `var(--color_primary-green)`,
-        },
-        {
-          color: "#F0FAF9",
-          name: "Secondary -F0FAF9",
-          usage: `Secondary elements (pressed, checked)`,
-          css: `var(--color_secondary-sliver)`,
-        },
-        {
-          color: "#3D98FC",
-          name: "Secondary -3D98FC",
-          usage: `Secondary elements (pressed, checked)`,
-          css: `var(--color_secondary-blue)`,
-        },
-        {
-          color: "#F2F7FF",
-          name: "Secondary-F2F7FF",
-          usage: `Component `,
-          css: `var(--color_secondary-zircon)`,
-        },
-        {
-          color: "#F9FAFC",
-          name: "General / SubBG - F9FAFC",
-          usage: `Sub Page Background  `,
-          css: `var(--color_general_sub_bg)`,
-        },
-        {
-          color: "#E0E4EC",
-          name: "Sub Secondary- E0E4EC",
-          usage: `Sub Page secondary elements `,
-          css: `var(--color_secondary-mystic)`,
-        },
-        {
-          color: "#0B132B",
-          name: "Black - 0B132B",
-          usage: `Main titles all over the system, navigation titles, main text `,
-          css: `var(--color_black)`,
-        },
-        {
-          color: "#3A506B",
-          name: `Icons - 3A506B`,
-          usage: `icons, table head`,
-          css: `var(--color_icon)`,
-        },
-        {
-          color: "#9FA7B8",
-          name: `Gray - 9FA7B8`,
-          usage: `pagination info`,
-          css: `var(--color_gray-gull)`,
-        },
-        {
-          color: "#E0E4EC",
-          name: `Gray2-Lines - E0E4EC`,
-          usage: `Lines, outlinings`,
-          css: `var(--color_gray-mystic)`,
-        },
-        {
-          color: "#F7F9FE",
-          name: `Gray3- F7F9FE`,
-          usage: `Disabled state`,
-          css: `var(--color_gray-selago)`,
-        },
-        {
-          color: "#BDC4D3",
-          name: `Gray4-BDC4D3`,
-          usage: `Disabled state2`,
-          css: `var(--color_gray-heather)`,
-        },
-        {
-          color: "#F2F4F9",
-          name: `Gray5-F2F4F9`,
-          usage: `Component `,
-          css: `var(--color_gray-light_gray)`,
-        },
-        {
-          color: "#C6C6C6",
-          name: `Gray6-C6C6C6`,
-          usage: `Bottom Background`,
-          css: `var(--color_gray-silver)`,
-        },
-        {
-          color: "#888888",
-          name: `Gray7-888888`,
-          usage: `Bottom border`,
-          css: `var(--color_gray)`,
-        },
-        {
-          color: "#368AE6",
-          name: `Button-368AE6`,
-          usage: `Button hover`,
-          css: `var(--color_button-blue)`,
-        },
-        {
-          color: "#229382",
-          name: `Button-229382`,
-          usage: `Button hover`,
-          css: `var(--color_button-green)`,
-        },
-        {
-          color: "#565C6C",
-          name: `Button-565C6C`,
-          usage: `Button hover`,
-          css: `var(--color_button-gray)`,
-        },
-        {
-          color: "#4B505D",
-          name: `Button-4B505D`,
-          usage: `Button default`,
-          css: `var(--color_button-dark_gray)`,
-        },
-      ];
-      const processStatusColor = [
-        {
-          color: "#DDDDDD",
-          name: `process - DDDDDD`,
-          usage: `Statuses`,
-          css: `var(--status_process-gray)`,
-        },
-        {
-          color: "#00AEEF",
-          name: `process - 00AEEF`,
-          usage: `Statuses`,
-          css: `var(--status_process-light_blue)`,
-        },
-        {
-          color: "#0078C1",
-          name: `process -0078C1`,
-          usage: `Statuses`,
-          css: `var(--status_process-blue)`,
-        },
-        {
-          color: "#039855",
-          name: `process - 039855`,
-          usage: `Statuses`,
-          css: `var(--status_process-green)`,
-        },
-        {
-          color: "#F37321",
-          name: `process - F37321`,
-          usage: `Statuses`,
-          css: `var(--status_process-orange)`,
-        },
-      ];
-      const statusColor = [
-        {
-          color: "#FFAB00",
-          name: `Warning - FFAB00`,
-          usage: `Statuses`,
-          css: `var(--status_warn)`,
-        },
-        {
-          color: "#D92D20",
-          name: `Failure - D92D20`,
-          usage: `Statuses`,
-          css: `var(--status_error)`,
-        },
-        {
-          color: "#039855",
-          name: `Success - 039855`,
-          usage: `Statuses`,
-          css: `var(--status_success)`,
-        },
-      ];
-      const etcColor = [
-        {
-          color: "#39DBFF",
-          name: `Etc - 39DBFF`,
-          usage: `move, Space`,
-          css: `var(--status_etc-light_blue)`,
-        },
-        {
-          color: "#0A7AFF",
-          name: `Etc - 0A7AFF`,
-          usage: `widget select color`,
-          css: `var(--status_etc-blue)`,
-        },
-      ];
-      const newColor = [
-        {
-          color: "#FF5656",
-          name: `New - FF5656`,
-          usage: `Statuses`,
-          css: `var(--status_new-riange)`,
-        },
-        {
-          color: "#76BE34",
-          name: `New - 76BE34`,
-          usage: `Statuses`,
-          css: `var(--status_new-green)`,
-        },
-      ];
-
-      document.getElementById("etc-color").lastElementChild.outerHTML = etcColor
-        .map(
-          (data, index) => `
-    	<li>
-		<span>${index + 1}</span>
-        <span class="color"><em style="background-color:${data.css}"></em></span>
-        <span class="name">${data.name}</span>
-        <span class="usage"
-          >
-		  ${data.css}
-		  </span
-        >
-      </li>
-      `
-        )
-        .join("");
-      document.getElementById("new-color").lastElementChild.outerHTML = newColor
-        .map(
-          (data, index) => `
-    	<li>
-		<span>${index + 1}</span>
-        <span class="color"><em style="background-color:${data.css}"></em></span>
-        <span class="name">${data.name}</span>
-        <span class="usage"
-          >${data.css}</span
-        >
-      </li>
-      `
-        )
-        .join("");
-
-      document.getElementById("main-colors").lastElementChild.outerHTML = colorDatas
-        .map(
-          (data, index) => `
-    	<li>
-		<span>${index + 1}</span>
-        <span class="color"><em style="background-color:${data.css}"></em></span>
-        <span class="name">${data.name}</span>
-		<span class="usage"
-		  >${data.css}</span
-		>
-        <span class="usage"
-          >${data.usage}</span
-        >
-      </li>
-      `
-        )
-        .join("");
-      document.getElementById("process-status-color").lastElementChild.outerHTML = processStatusColor
-        .map(
-          (data, index) => `
-    	<li>
-		<span>${index + 1}</span>
-        <span class="color"><em style="background-color:${data.css}"></em></span>
-        <span class="name">${data.name}</span>
-        <span class="usage"
-          >${data.css}</span
-        >
-        <span class="usage"
-          >${data.usage}</span
-        >
-      </li>
-      `
-        )
-        .join("");
-      document.getElementById("status-color").lastElementChild.outerHTML = statusColor
-        .map(
-          (data, index) => `
-    	<li>
-		<span>${index + 1}</span>
-        <span class="color"><em style="background-color:${data.css}"></em></span>
-        <span class="name">${data.name}</span>
-        <span class="usage"
-          >${data.css}</span
-        >
-        <span class="usage"
-          >${data.usage}</span
-        >
-      </li>
-      `
-        )
-        .join("");
-    </script>
   </body>
 </html>
