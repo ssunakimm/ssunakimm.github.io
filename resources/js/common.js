@@ -14,14 +14,59 @@ $(document).ready(function(){
     $(document).on('mouseover', '.header .gnb.web .gnb_main ul li a', function(){
         let index = $(this).parent().index();
         mouseToggleMenuWeb('open', index);
-        
     });
 
     $(document).on('mouseleave', '.header .gnb.web', function(){
-        mouseToggleMenuWeb('close')
+        mouseToggleMenuWeb('close');
+    });
+
+    // search 버튼에 mouseover할 경우 gnbMenu닫기
+    $(document).on('mouseover', '.header .gnb.web .gnb_main .menu .icon_search', function(){
+        $('.header .gnb.web .gnb_sub').stop().slideUp(350);
+        dim.hide();
+        // 기존 마우스 아웃 이벤트 제거
+        $('.header .gnb.web').off('mouseleave');
+    });
+    // menu 버튼에 mouseover할 경우 gnbMenu닫기
+    $(document).on('mouseover', '.header .gnb.web .gnb_main .menu .icon_menu', function(){
+        $('.header .gnb.web .gnb_sub').stop().slideUp(350);
+        dim.hide();
+        // 기존 마우스 아웃 이벤트 제거
+        $('.header .gnb.web').off('mouseleave');
+    });
+
+    // history 슬라이더 관련
+    var historySlider = $('.history1 .slide');  	
+    var historySlickOptions = { 
+		dots: false,
+		arrows: false,
+		infinite: false,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: 'slick'
+            },
+            {
+                breakpoint: 2560,
+                settings: 'unslick'
+            }
+        ]
+    };  	
+    $(window).on('load resize', function() { 		
+       historySlider.not('.slick-initialized').slick(historySlickOptions); 
     });
 
 
+    // contact-info 영역
+    // $('input[name="お問い合わせ分類"]').on('click', function() {
+    //     // 선택된 라디오 버튼의 value 값 가져오기
+    //     var selectedValue = $(this).data('name');
+    
+    //     // 선택된 value 값에 해당하는 영역만 보여주기
+    //     $('.contact').hide();
+    //     $('#' + selectedValue).show();
+    //   });
     // let previousScrollTop;
     // $(window).scroll(function() {
     //     const scrollTop = $(window).scrollTop();
@@ -55,11 +100,9 @@ function toggleGnbMobile(type){
 	if(type == 'open'){
         gnbSub.addClass('open');        
         body.addClass('no_scroll');
-        dim.show();
     } else {
         gnbSub.removeClass('open');        
         body.removeClass('no_scroll');
-        dim.hide();
     }
 }
 
@@ -103,7 +146,6 @@ function toggleSearchMobile(type){
     type : open / hide
  */
 function toggleSearchWeb(type){
-    mouseToggleMenuWeb('close');
     let search= $('.header .gnb.web .gnb_search');
     let btnSearch= $('.header .gnb.web .gnb_main .menu .icon_search');
     let btnSearchClose= $('.header .gnb.web .gnb_main .menu .icon_close');
@@ -125,7 +167,7 @@ function toggleSearchWeb(type){
     type : open / hide
  */
 function toggleMenuWeb(type){
-    toggleSearchWeb('close')
+    toggleSearchWeb('close');
     if(type == 'open'){      
         body.addClass('no_scroll');
         dim.show();
@@ -136,11 +178,7 @@ function toggleMenuWeb(type){
         body.removeClass('no_scroll');
         dim.hide();
         $('.header .gnb.web .gnb_sub').removeClass('nav');
-        $('.header .gnb.web').on("mouseleave", function() {
-            $('.header .gnb.web .gnb_sub').stop().slideUp(300, function() {
-                
-            });
-        });
+        
     }    
 }
 
@@ -155,6 +193,10 @@ function toggleMenuWeb(type){
             $('.header .gnb.web .gnb_sub > div').hide();
             $('.header .gnb.web .gnb_sub > div').eq(index).fadeIn();
             $('.header .gnb.web .gnb_sub > div').eq(index).css('display','flex'); 
+            
+            $('.header .gnb.web .gnb_sub').css("padding-top", "2.552vw");
+            $('.header .gnb.web .gnb_sub').css("padding-bottom", "3.072vw");
+            $('.header .gnb.web .gnb_sub').css("opacity",1);
             dim.show();
         }else {      
             $('.header .gnb.web .gnb_sub > div .img').addClass('none');
