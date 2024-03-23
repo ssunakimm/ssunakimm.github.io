@@ -5,7 +5,7 @@ let dim
 $(document).ready(function(){
     
     // 애니메이션
-    AOS.init();
+    AOS.init({});
 
     body = $('body');
     dim = $('.dim');
@@ -22,17 +22,15 @@ $(document).ready(function(){
 
     // search 버튼에 mouseover할 경우 gnbMenu닫기
     $(document).on('mouseover', '.header .gnb.web .gnb_main .menu .icon_search', function(){
-        $('.header .gnb.web .gnb_sub').stop().slideUp(350);
-        dim.hide();
+        mouseToggleMenuWeb('close');
         // 기존 마우스 아웃 이벤트 제거
         $('.header .gnb.web').off('mouseleave');
     });
     // menu 버튼에 mouseover할 경우 gnbMenu닫기
     $(document).on('mouseover', '.header .gnb.web .gnb_main .menu .icon_menu', function(){
-        $('.header .gnb.web .gnb_sub').stop().slideUp(350);
-        dim.hide();
+        mouseToggleMenuWeb('close');
         // 기존 마우스 아웃 이벤트 제거
-        $('.header .gnb.web').off('mouseleave');
+        //$('.header .gnb.web').off('mouseleave');
     });
 
     // history 슬라이더 관련
@@ -57,16 +55,14 @@ $(document).ready(function(){
        historySlider.not('.slick-initialized').slick(historySlickOptions); 
     });
 
+    // 인풋박스는 가운데 정렬
+    $(".c_txt-input").each(function () {
+        const dl = $(this).closest("dl");
+        dl.css("align-items", "center");
+      });
 
-    // contact-info 영역
-    // $('input[name="お問い合わせ分類"]').on('click', function() {
-    //     // 선택된 라디오 버튼의 value 값 가져오기
-    //     var selectedValue = $(this).data('name');
-    
-    //     // 선택된 value 값에 해당하는 영역만 보여주기
-    //     $('.contact').hide();
-    //     $('#' + selectedValue).show();
-    //   });
+
+
     // let previousScrollTop;
     // $(window).scroll(function() {
     //     const scrollTop = $(window).scrollTop();
@@ -167,7 +163,6 @@ function toggleSearchWeb(type){
     type : open / hide
  */
 function toggleMenuWeb(type){
-    toggleSearchWeb('close');
     if(type == 'open'){      
         body.addClass('no_scroll');
         dim.show();
@@ -186,30 +181,55 @@ function toggleMenuWeb(type){
     웹용 GNB  Mouseover / Mouseleave
     type : open / hide
  */
-    function mouseToggleMenuWeb(type, index){
-        if(type == 'open'){      
-            $('.header .gnb.web .gnb_sub').stop().slideDown(350);
-    
-            $('.header .gnb.web .gnb_sub > div').hide();
-            $('.header .gnb.web .gnb_sub > div').eq(index).fadeIn();
-            $('.header .gnb.web .gnb_sub > div').eq(index).css('display','flex'); 
-            
+function mouseToggleMenuWeb(type, index){
+    if(type == 'open'){      
+        $('.header .gnb.web .gnb_sub').stop().slideDown(350, function() {
             $('.header .gnb.web .gnb_sub').css("padding-top", "2.552vw");
             $('.header .gnb.web .gnb_sub').css("padding-bottom", "3.072vw");
             $('.header .gnb.web .gnb_sub').css("opacity",1);
-            dim.show();
-        }else {      
-            $('.header .gnb.web .gnb_sub > div .img').addClass('none');
-            $('.header .gnb.web .gnb_sub').stop().fadeOut(350, function() {
-                $('.header .gnb.web .gnb_sub > div .img').removeClass('none');
-            }); 
+        }); 
 
-            let search= $('.header .gnb.web .gnb_search');
-            if(!search.is(':visible')){
-                dim.hide();
+        $('.header .gnb.web .gnb_sub > div').hide();
+        $('.header .gnb.web .gnb_sub > div').eq(index).fadeIn();
+        $('.header .gnb.web .gnb_sub > div').eq(index).css('display','flex'); 
+        $('.header .gnb.web .gnb_sub > div .img').removeClass('none');
+        
+        
+        dim.show();
+    }else {      
+        $('.header .gnb.web .gnb_sub > div .img').addClass('none');
+        $('.header .gnb.web .gnb_sub').stop().fadeOut(350); 
 
+        let search= $('.header .gnb.web .gnb_search');
+        if(!search.is(':visible')){
+            dim.hide();
+
+        }
+    }    
+}
+
+
+/* 
+    아코디언 Show / hide
+ */
+    function toggleAccodion(e){
+        let thisNode = $(e);
+        thisNode.parent('li').toggleClass('open')
+        thisNode.next().slideToggle({
+            duration: 400,
+            easing: "swing",
+            start: function() {
+                thisNode.next().css("display", "flex");                
+                thisNode.addClass('bg_white');
+            },
+            complete: function() {
+              if ($(this).is(":hidden")) {
+                thisNode.next().css("display", "none");                
+                thisNode.removeClass('bg_white');
+              }
             }
-        }    
+          });
+        $(e).find('.icon_toggle').toggleClass('open');
     }
 
 /* 
