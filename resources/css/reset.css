@@ -1,12 +1,12 @@
 ﻿@charset "UTF-8";
 
 /* CSS reset */
-html, body, div, span, applet, object, iframe, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, ol, ul, li, samp, small, span, var, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, dl, dt, dd{margin:0;padding:0;border:0;font-style:normal;font-variant:normal;font-weight:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;line-height:150%}
-input, select, textarea{margin:0;padding:0;font-style:normal;font-variant:normal;font-weight:inherit;font-size:100%;font-family:inherit;line-height:100%}
+html, body, div, span, applet, object, iframe, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, ol, ul, li, samp, small, span, var, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, dl, dt, dd{margin:0;padding:0;border:0;font-style:normal;font-variant:normal;vertical-align:baseline;line-height:160%}
+input, select, textarea{margin:0;padding:0;font-style:normal;font-variant:normal;}
 legend {display:none;}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
-html, body{min-width:320px;font-family:'Noto Sans JP';-webkit-text-size-adjust:none;font-size: 10px;font-weight:400;color:#333;}
+html, body{min-width:320px;font-family:'Noto Sans JP';-webkit-text-size-adjust:none;font-size: 10px;font-weight:400;line-height:160%;color:var(--black);}
 li{list-style:none}
 blockquote, q{quotes:'"' '"'}
 blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
@@ -36,7 +36,7 @@ h5 {font-size: 0.83em;}
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--basic-dark-navy);
+    background-color: var(--grey04);
     border-radius: 10px;
 }
 

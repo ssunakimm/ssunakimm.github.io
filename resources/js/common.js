@@ -5,7 +5,11 @@ let dim
 $(document).ready(function(){
     
     // 애니메이션
-    AOS.init({});
+    AOS.init({
+        easing: 'ease-in-cubic',
+        duration: 1000, // 1.2초
+        offset: 0
+      });
 
     body = $('body');
     dim = $('.dim');
