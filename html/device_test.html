@@ -9,8 +9,12 @@
 
 </head>
 <body>
-    <h1>기기 종류 확인2</h1>
+    <h1>기기 종류 확인3</h1>
     <p id="device-type"></p>
+    <p id="device-type1">mobile</p>
+    <p id="device-type2">tablet</p>
+    <p id="device-type3">pc</p>
+    <p id="device-type4">pc</p>
     <script>
         // Mobile-Detect 객체 생성
         var md = new MobileDetect(window.navigator.userAgent);
@@ -24,6 +28,12 @@
             } else {
                 $("#device-type").text("PC");
             }
+
+            $("#device-type1").text(md.mobile());
+            $("#device-type2").text(md.tablet());
+            $("#device-type3").text(md.pc());
+            $("#device-type4").text(md.is('iPad'));
+            
         });
     </script>
 </body>
