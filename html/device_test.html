@@ -11,19 +11,26 @@
 <body>
     <h1>기기 종류 확인3</h1>
     <p id="device-type"></p>
-    <p id="device-type1">mobile</p>
-    <p id="device-type2">tablet</p>
-    <p id="device-type3">pc</p>
-    <p id="device-type4">pc</p>
+    <p>1 <span id="device-type1">mobile</span></p>
+    <p>2 <span id="device-type2">tablet</span></p>
+    <p>3 <span id="device-type3">pc</span></p>
+    <p>4 isIpad <span id="device-type4">pc</span></p>
     <script>
         // Mobile-Detect 객체 생성
         var md = new MobileDetect(window.navigator.userAgent);
+
+        var mobileArray = ['iPhone', 'BlackBerry', 'Pixel', 'HTC', 'Nexus', 'Dell', 'Motorola', 'Samsung', 'LG', 'Sony', 'Asus', 'Xiaomi', 'NokiaLumia', 'Micromax', 'Palm', 'Vertu', 'Pantech', 'Fly', 'Wiko', 'iMobile', 'SimValley', 'Wolfgang', 'Alcatel', 'Nintendo', 'Amoi', 'INQ', 'OnePlus', 'GenericPhone'];
+        var tabletArray = ['iPad', 'Tablet'];
+
+        var mobile = md.mobile();
+        var tablet = md.tablet();
+        var pc = md.pc();
         
         // jQuery를 이용하여 기기 종류 표시
         $(document).ready(function() {
-            if (md.mobile()) {
+            if (mobileArray.includes(mobile)) {
                 $("#device-type").text("모바일 기기");
-            } else if (md.tablet() || md.is('iPad')) {
+            } else if (tabletArray(tablet) || md.is('iPad')) {
                 $("#device-type").text("태블릿 기기");
             } else {
                 $("#device-type").text("PC");
