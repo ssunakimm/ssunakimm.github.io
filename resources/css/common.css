@@ -234,6 +234,8 @@
 
 .sub_img2 div p { font-size: 1.5rem; line-height: 170%; color: var(--white); text-align: center; } 
 
+.sub_img2 div p b {font-weight: 500;}
+
 .sub_img_cont { position: relative; width: 100%; } 
 
 .sub_img_cont img { position: relative; top: 50%; left: 50%; transform: translate(-50%,-50%); } 
@@ -392,7 +394,7 @@
 
 .philosophy2 .text { margin-bottom: 53px; text-align: center; } 
 
-.philosophy2 .text b { font-size: 2.4rem; color: var(--white); } 
+.philosophy2 .text b { font-size: 2.4rem; font-weight: 400; color: var(--white); } 
 
 .philosophy2 .text p { margin-top: 14px; font-size: 1.6rem; color: var(--white); } 
 
@@ -504,11 +506,11 @@
 
 .business ul li .text .c_btn_wrap .c_btn2:after { width: 22px; height: 14px; margin-left: 7px; background: url(../../resources/img/main/icon_arrow_right_blue.svg) no-repeat; background-size: cover; } 
 
-.business ul li .icon { padding: 23px 14px 33px; background-color: var(--pastel_blue); border-radius: 10px;; } 
+ .business ul li .icon a img { padding: 23px 14px 33px; background-color: var(--pastel_blue); border-radius: 10px;; } 
 
-.business ul li .icon .sub_list { margin-top: 0; gap: 0;; } 
+ .business ul li .icon a img .sub_list { margin-top: 0; gap: 0;; } 
 
-.business ul li .icon img { display: block; width: 37.777vw; max-width: 162px; margin: 33px auto 0; } 
+ .business ul li .icon a img img { display: block; width: 37.777vw; max-width: 162px; margin: 33px auto 0; } 
 .business.energy ul { gap:40px; column-gap: 0;} 
 
 .sub_title2.chemical { background: url(../../resources/img/sub/img_chemical_bg.jpg) no-repeat; background-size: cover; background-position-x: 18%; padding-bottom: 60px;; } 
@@ -979,7 +981,7 @@
 
  .history2 dl dd ul li:last-child { margin-bottom: 0; } 
 
- .contact>.c_error_text { margin: 0 9.375vw 1.71875vw; } 
+ .contact>.c_error_text { margin: 0 13.541vw 1.71875vw; } 
 
  .contact .form { margin: 0 13.541vw; padding: 0.52083vw 0; } 
 
@@ -1122,11 +1124,11 @@
  
  .business ul li .text .c_btn_wrap .c_btn2 { padding: 0.7vw 1.65vw; font-size: 1.6rem; color: var(--basic_blue); line-height: 150%; border-color: var(--basic_blue); } 
 
- .business ul li .icon { position: relative; padding: 1.775vw 0 1.875vw 1.5625vw; border-radius: 0.52083vw; } 
+  .business ul li .icon a img { position: relative; padding: 1.775vw 0 1.875vw 1.5625vw; border-radius: 0.52083vw; } 
 
- .business ul li .icon .sub_list li { width: 65%; font-size: min(0.833vw,16px); margin-bottom: 0.9375vw } 
+  .business ul li .icon a img .sub_list li { width: 65%; font-size: min(0.833vw,16px); margin-bottom: 0.9375vw } 
 
- .business ul li .icon img { position: absolute; top: 50%; right: 1.97916vw; width: 8.4375vw; margin: 0; transform: translate(0,-50%); } 
+  .business ul li .icon a img img { position: absolute; top: 50%; right: 1.97916vw; width: 8.4375vw; margin: 0; transform: translate(0,-50%); } 
 
  .sub_title2.chemical { background-position-x: center; } 
  .sub_title2.material .info { gap: 4.05vw; padding: 2.60416vw 3.125vw 3.9vw; } 
