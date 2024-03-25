@@ -1074,7 +1074,7 @@
 .c_radio>input[type="radio"]+label:before {
 	content:'';
 	position:absolute;
-	top:0;
+	top:1px;
 	left:0;
 	width:20px;
 	height:20px;
@@ -1159,6 +1159,7 @@
 		font-size:min(0.9375vw,18px);
 	}
 	.c_radio>input[type="radio"]+label:before {
+		top: 1px;
 		width:min(1.25vw,24px);
 		height:min(1.25vw,24px);
 		border:0.1041vw solid var(--grey04);

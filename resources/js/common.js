@@ -8,7 +8,7 @@ $(document).ready(function(){
     AOS.init({
         easing: 'ease-in-cubic',
         duration: 1000, // 1.2초
-        offset: 0
+        offset: -100
       });
 
     body = $('body');
@@ -50,7 +50,7 @@ $(document).ready(function(){
                 settings: 'slick'
             },
             {
-                breakpoint: 2560,
+                breakpoint: 3840,
                 settings: 'unslick'
             }
         ]

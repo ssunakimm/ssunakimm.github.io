@@ -1015,6 +1015,8 @@
 
  .contact .form .item dl.privacy dd .agree .c_radio { width: auto; } 
 
+ .contact .form .item dl.privacy dd .agree .c_radio > input[type="radio"]+label:before { top:5px; } 
+
  .contact .form .item dl.business_area dd { gap: 1.5625vw; } 
 
  .contact .form .item dl.business_area dd .c_radio { width: 100%; } 
