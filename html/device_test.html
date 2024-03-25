@@ -13,8 +13,8 @@
     <p id="device-type"></p>
     <p>1 <span id="device-type1">mobile</span></p>
     <p>2 <span id="device-type2">tablet</span></p>
-    <p>3 <span id="device-type3">pc</span></p>
-    <p>4 isIpad <span id="device-type4">pc</span></p>
+    <p>4 isIpad <span id="device-type3">pc</span></p>
+    
     <script>
         // Mobile-Detect 객체 생성
         var md = new MobileDetect(window.navigator.userAgent);
@@ -38,8 +38,7 @@
 
             $("#device-type1").text(md.mobile());
             $("#device-type2").text(md.tablet());
-            $("#device-type3").text(md.pc());
-            $("#device-type4").text(md.is('iPad'));
+            $("#device-type3").text(md.is('iPad'));
             
         });
     </script>
