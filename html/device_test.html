@@ -9,12 +9,12 @@
 
 </head>
 <body>
-    <h1>기기 종류 확인3</h1>
+    <h1>기기 종류 확인4</h1>
     <p id="device-type"></p>
     <p>1 <span id="device-type1">mobile</span></p>
     <p>2 <span id="device-type2">tablet</span></p>
     <p>4 isIpad <span id="device-type3">pc</span></p>
-    
+
     <script>
         // Mobile-Detect 객체 생성
         var md = new MobileDetect(window.navigator.userAgent);
@@ -24,7 +24,6 @@
 
         var mobile = md.mobile();
         var tablet = md.tablet();
-        var pc = md.pc();
         
         // jQuery를 이용하여 기기 종류 표시
         $(document).ready(function() {
