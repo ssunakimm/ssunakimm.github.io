@@ -39,6 +39,16 @@
             $("#device-type2").text(md.tablet());
             $("#device-type3").text(md.is('iPad'));
             
+
+            const userAgent = navigator.userAgent;
+
+            if (userAgent.includes("iPad")) {
+            alert('아이패드')
+            } else if (userAgent.includes("Macintosh")) {
+            alert('맥븍')
+            } else {
+            console.log("사용 기기는 알 수 없습니다.");
+            }
         });
     </script>
 </body>
