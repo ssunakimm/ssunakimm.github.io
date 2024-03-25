@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <h1>기기 종류 확인</h1>
+    <h1>기기 종류 확인2</h1>
     <p id="device-type"></p>
     <script>
         // Mobile-Detect 객체 생성
@@ -19,7 +19,7 @@
         $(document).ready(function() {
             if (md.mobile()) {
                 $("#device-type").text("모바일 기기");
-            } else if (md.tablet()) {
+            } else if (md.tablet() || md.is('iPad')) {
                 $("#device-type").text("태블릿 기기");
             } else {
                 $("#device-type").text("PC");
