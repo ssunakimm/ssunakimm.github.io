@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <h1>기기 종류 확인4</h1>
+    <h1>기기 종류 확인</h1>
     <p id="device-type"></p>
     <p>1 <span id="device-type1">mobile</span></p>
     <p>2 <span id="device-type2">tablet</span></p>
@@ -29,7 +29,7 @@
         $(document).ready(function() {
             if (mobileArray.includes(mobile)) {
                 $("#device-type").text("모바일 기기");
-            } else if (tabletArray(tablet) || md.is('iPad')) {
+            } else if (tabletArray.includes(tablet) || md.is('iPad')) {
                 $("#device-type").text("태블릿 기기");
             } else {
                 $("#device-type").text("PC");
