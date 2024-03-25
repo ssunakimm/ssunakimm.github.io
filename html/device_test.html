@@ -3,53 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile-Detect.js & jQuery 예시</title>
+    <title>모바일 여부 확인</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
+    <script>
+        function isMobile() {
+            const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+            const userAgent = navigator.userAgent;
+            return mobileRegex.test(userAgent);
+        }
+        
+        var result = '';
 
+        if (isMobile()) {
+
+            result = '모바일';
+
+            if(navigator.maxTouchPoints == 5){
+                result = '아이패드';
+            }else {
+                result = '피씨';
+            }
+        } else {
+            
+            result = '피씨';
+        }
+
+        alert(result);
+    </script>
 </head>
 <body>
-    <h1>기기 종류 확인</h1>
-    <p id="device-type"></p>
-    <p>1 <span id="device-type1">mobile</span></p>
-    <p>2 <span id="device-type2">tablet</span></p>
-    <p>4 isIpad <span id="device-type3">pc</span></p>
-
+    <h1>사용 기기는 <span id="device-type"></span>입니다.</h1>
     <script>
-        // Mobile-Detect 객체 생성
-        var md = new MobileDetect(window.navigator.userAgent);
-
-        var mobileArray = ['iPhone', 'BlackBerry', 'Pixel', 'HTC', 'Nexus', 'Dell', 'Motorola', 'Samsung', 'LG', 'Sony', 'Asus', 'Xiaomi', 'NokiaLumia', 'Micromax', 'Palm', 'Vertu', 'Pantech', 'Fly', 'Wiko', 'iMobile', 'SimValley', 'Wolfgang', 'Alcatel', 'Nintendo', 'Amoi', 'INQ', 'OnePlus', 'GenericPhone'];
-        var tabletArray = ['iPad', 'Tablet'];
-
-        var mobile = md.mobile();
-        var tablet = md.tablet();
-        
-        // jQuery를 이용하여 기기 종류 표시
-        $(document).ready(function() {
-            if (mobileArray.includes(mobile)) {
-                $("#device-type").text("모바일 기기");
-            } else if (tabletArray.includes(tablet) || md.is('iPad')) {
-                $("#device-type").text("태블릿 기기");
-            } else {
-                $("#device-type").text("PC");
-            }
-
-            $("#device-type1").text(md.mobile());
-            $("#device-type2").text(md.tablet());
-            $("#device-type3").text(md.is('iPad'));
-            
-
-            const userAgent = navigator.userAgent;
-
-            if (userAgent.includes("iPad")) {
-            alert('아이패드')
-            } else if (userAgent.includes("Macintosh")) {
-            alert('맥븍')
-            } else {
-            console.log("사용 기기는 알 수 없습니다.");
-            }
-        });
+        $("#device-type").text(isMobile() ? "모바일" : "PC");
     </script>
 </body>
 </html>
