@@ -7,34 +7,36 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         function isMobile() {
-            const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
             const userAgent = navigator.userAgent;
             return mobileRegex.test(userAgent);
         }
         
-        var result = '';
+        function checkDevice() {
+            // 여부를 확인하는 정규 표현식
+            const mobileRegex = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i;
+            const tabletRegex = /Tablet|iPad|Macintosh|NexusTablet|GoogleTablet|SamsungTablet|Kindle/i;
 
-        if (isMobile()) {
+            // User Agent 정보 확인
+            const userAgent = navigator.userAgent;
 
-            result = '모바일';
-
-            if(navigator.maxTouchPoints == 5){
-                result = '아이패드';
-            }else {
-                result = '피씨';
-            }
-        } else {
             
-            result = '피씨';
-        }
 
+            if(mobileRegex.test(userAgent)) {
+                result = '모바일'
+            }else {
+                
+                if(tabletRegex.test(userAgent) && navigator.maxTouchPoints == 5) {
+                    result = '아이패드'
+                }else {
+                    result = 'pc'
+                }
+            }
+
+        }
         alert(result);
     </script>
 </head>
 <body>
     <h1>사용 기기는 <span id="device-type"></span>입니다.</h1>
-    <script>
-        $("#device-type").text(isMobile() ? "모바일" : "PC");
-    </script>
 </body>
 </html>
