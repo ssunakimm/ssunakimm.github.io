@@ -47,8 +47,3 @@ h5 {font-size: 0.83em;}
 *::-webkit-scrollbar-corner {
     background-color: transparent;
 }
-
-*::-webkit-scrollbar {
-    display: none;
-}
-    

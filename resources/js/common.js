@@ -65,6 +65,21 @@ $(document).ready(function(){
         dl.css("align-items", "center");
       });
 
+    $(".c_tab ul li").click(function(){
+        let index = $(this).index();
+        $(".c_tab ul li").removeClass('on');
+        $(this).addClass('on');
+    
+        if(index == 0){
+            $('.c_tab_bar').animate({left: 0}, 350); 
+            $('.c_tab_content[data-tab="process0"]').show();
+            $('.c_tab_content[data-tab="process1"]').hide();
+        }else {
+            $('.c_tab_bar').animate({left: $('.c_tab_bar').width()}, 350); 
+            $('.c_tab_content[data-tab="process0"]').hide();
+            $('.c_tab_content[data-tab="process1"]').show();
+        }
+    })
 
 
     // let previousScrollTop;

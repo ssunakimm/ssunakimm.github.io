@@ -20,6 +20,8 @@
     --grey02 : #8C9299;
     --grey04 : #B3B5B9;
     --grey05 : #F6F6F6; /* 추가*/
+    --grey06 : #DCDDE1; /* 추가*/
+    --grey07 : #F6F8FA; /* 추가*/
     --gradient_blue : linear-gradient(270deg, #3973D1 0%, #004098 100%);
     --gradation_skyblue : linear-gradient(90deg, #F2F6FD -27.67%, #78A9FF 111.26%);
 }
