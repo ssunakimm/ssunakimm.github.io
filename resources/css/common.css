@@ -274,9 +274,11 @@
 
 .vision .info dl dd { margin-top: 20px; } 
 
+.vision .info dl dd .sub_list .fs_13 {font-size: 13px;}
+
 .ceo .bg { padding: 54px 0 130px; background: url(../../resources/img/sub/img_ceo_bg.jpg) no-repeat left center; background-size: cover; } 
 
-.ceo .bg p { display: block; width: 75.555vw; margin: 0 auto; font-size: 1.8rem; font-weight: 700; color: var(--white); text-align: center; } 
+.ceo .bg p { display: block; margin: 0 auto; font-size: 1.8rem; font-weight: 700; color: var(--white); text-align: center; } 
 
 .ceo .text { display: flex; flex-direction: column; gap: 30px; padding: 56px 26px 80px 25px; } 
 
@@ -319,6 +321,8 @@
 .corporate .list .business_cont dl { display: flex; flex-direction: column; gap: 20px; padding: 20px; background: var(--pastel_blue); border-radius: 10px; } 
 
 .corporate .list .business_cont dl dt { font-size: 1.4rem; color: var(--basic_blue); } 
+
+.corporate .list .business_cont dl dd { font-size: 1.4rem; color: var(--000); line-height: 160%; } 
 
 .history1 { padding: 60px 0; background: var(--pastel_blue); } 
 
@@ -373,6 +377,8 @@
 .contact .form .item dl.job dd { flex-wrap: wrap; flex-direction: row; column-gap: 0; } 
 
 .contact .form .item dl.job dd .c_radio { width: 50%; } 
+
+.contact .form .item dl.business_area dd .c_radio.fs_13>input[type="radio"]+label {font-size: 13px;}
 
 .contact .form .item dl.privacy dd { gap: 14px; } 
 
@@ -494,8 +500,6 @@
 
 .business ul li .img img { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); transition: all 0.35s; } 
 
-.business ul li .img img:hover { transform: translate(-50%, -50%) scale(1.1); } 
-.business ul li .img img:hover:before { content: ''; position: absolute; display: block; top: 0; left: 0; right: 0; bottom: 0; background: #007aff40; } 
 .business ul li .text b { font-size: 1.6rem; font-weight: 500; color: var(--basic-dark-navy); line-height: normal; } 
 
 .business ul li .text p { margin-top: 14px; font-size: 1.4rem; color: var(--basic-dark-navy); line-height: 160%; } 
@@ -506,11 +510,10 @@
 
 .business ul li .text .c_btn_wrap .c_btn2:after { width: 22px; height: 14px; margin-left: 7px; background: url(../../resources/img/main/icon_arrow_right_blue.svg) no-repeat; background-size: cover; } 
 
- .business ul li .icon a img { padding: 23px 14px 33px; background-color: var(--pastel_blue); border-radius: 10px;; } 
+.business ul li .icon  { padding: 23px 14px 33px; background-color: var(--pastel_blue); border-radius: 10px;; } 
+.business ul li .icon .sub_list { margin-top: 0; gap: 0;; } 
 
- .business ul li .icon a img .sub_list { margin-top: 0; gap: 0;; } 
-
- .business ul li .icon a img img { display: block; width: 37.777vw; max-width: 162px; margin: 33px auto 0; } 
+.business ul li .icon a img { display: block; width: 37.777vw; max-width: 162px; margin: 33px auto 0; } 
 .business.energy ul { gap:40px; column-gap: 0;} 
 
 .sub_title2.chemical { background: url(../../resources/img/sub/img_chemical_bg.jpg) no-repeat; background-size: cover; background-position-x: 18%; padding-bottom: 60px;; } 
@@ -601,9 +604,7 @@
 
  .corporate .list .company_cont dl { width: calc(50% - 10px); } 
 
- .corporate .list .business_cont { display: flex; flex-direction: row; flex-wrap: wrap; } 
 
- .corporate .list .business_cont dl { width: calc(50% - 50px); } 
  }
 
 /** WEB **/
@@ -871,7 +872,7 @@
 
  .sub_img div p { margin-top: 1.0416vw; font-size: min(1.25vw,24px); } 
 
- .sub_img2 div { padding: 5.3125vw 0 4.8958vw; } 
+ .sub_img2 div { padding: 4.1666vw 0 3.4375vw; } 
 
  .sub_img2 div p { font-size: min(1.4583vw,28px); } 
 
@@ -898,6 +899,8 @@
  .vision .info dl dt { font-size: min(1.6666vw,32px) } 
 
  .vision .info dl dd { margin-top: 2.5625vw; } 
+ 
+ .vision .info dl dd .sub_list .fs_13 {font-size: min(0.9375vw,18px);}
 
  .ceo { display: flex; margin-bottom: 6.25vw; padding: 6.302vw 9.375vw 6.8229vw; background: url(../../resources/img/sub/img_ceo_bg.jpg) no-repeat center; background-size: cover; } 
 
@@ -945,11 +948,13 @@
 
  .corporate .list .company_cont dl dd { font-size: min(1.0416vw,20px); line-height: normal; } 
 
- .corporate .list .business_cont { display: flex; flex-direction: row; gap: 2.6041vw; } 
+ .corporate .list .business_cont { display: flex; } 
 
- .corporate .list .business_cont dl { gap: 1.0416vw; padding: 1.5625vw; border-radius: 1.0416vw; width: calc(50% - 1.3020vw); box-sizing: border-box; } 
+ .corporate .list .business_cont dl { flex-direction: row;gap: 13.633vw; padding: 2.0833vw 2.34375vw; border-radius: 1.0416vw; } 
 
  .corporate .list .business_cont dl dt { font-size: min(0.9375vw,18px); } 
+ 
+ .corporate .list .business_cont dl dd { font-size: min(0.9375vw,18px); } 
 
  .history1 { padding: 5.2083vw 13.5416vw; } 
 
@@ -1021,6 +1026,8 @@
 
  .contact .form .item dl.business_area dd .c_radio { width: 100%; } 
 
+ .contact .form .item dl.business_area dd .c_radio.fs_13>input[type="radio"]+label {font-size: min(0.9375vw,18px);}
+
  .contact .c_btn_wrap { margin: 3.125vw auto 6.25vw; text-align: center; } 
 
  .philosophy1 .explain { margin-top: 4.5vw; margin-bottom: 1.1666vw; } 
@@ -1077,7 +1084,7 @@
 
  .philosophy4 .text b { font-size: min(3.125vw,60px) } 
 
- .philosophy4 .text p { width: 41vw; margin-top: 0.5vw; font-size: min(1.1458vw,22px); } 
+ .philosophy4 .text p { width: 42vw; margin-top: 0.5vw; font-size: min(1.1458vw,22px); } 
 
  .philosophy4 .division { font-size: min(1.1458vw,22px); margin-bottom: 2.80416vw; } 
 
@@ -1126,11 +1133,11 @@
  
  .business ul li .text .c_btn_wrap .c_btn2 { padding: 0.7vw 1.65vw; font-size: 1.6rem; color: var(--basic_blue); line-height: 150%; border-color: var(--basic_blue); } 
 
-  .business ul li .icon a img { position: relative; padding: 1.775vw 0 1.875vw 1.5625vw; border-radius: 0.52083vw; } 
+ 
+ .business ul li .icon { position: relative; padding: 1.775vw 0 1.875vw 1.5625vw; border-radius: 0.52083vw; } 
+ .business ul li .icon .sub_list li { width: 65%; font-size: min(0.833vw,16px); margin-bottom: 0.9375vw } 
 
-  .business ul li .icon a img .sub_list li { width: 65%; font-size: min(0.833vw,16px); margin-bottom: 0.9375vw } 
-
-  .business ul li .icon a img img { position: absolute; top: 50%; right: 1.97916vw; width: 8.4375vw; margin: 0; transform: translate(0,-50%); } 
+ .business ul li .icon a img { position: absolute; top: 50%; right: 1.97916vw; width: 8.4375vw; margin: 0; transform: translate(0,-50%); } 
 
  .sub_title2.chemical { background-position-x: center; } 
  .sub_title2.material .info { gap: 4.05vw; padding: 2.60416vw 3.125vw 3.9vw; } 
