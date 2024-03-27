@@ -199,7 +199,7 @@
 
 .sub_title .explain { margin: 60px 20px 0; display: block; font-size: 1.8rem; color: var(--basic-dark-navy); text-align: center; } 
 
-/* business title 영역 */
+/* business title ì˜ì—­ */
 .sub_title2 { padding: 50px 0 70px; } 
 
 .sub_title2 .title { font-size: 3.0rem; font-weight: 500; color: var(--white); line-height: normal; text-align: center; } 
@@ -252,7 +252,7 @@
 
 .sub_list2 li { position: relative; padding-left: 19px; font-size: 1.4rem; text-align: left; } 
 
-.sub_list2 li:before { content: '·'; position: absolute; top: 0; left: 6px; font-size: 1.4rem; } 
+.sub_list2 li:before { content: 'Â·'; position: absolute; top: 0; left: 6px; font-size: 1.4rem; } 
 
 .vision { padding: 60px 0 80px; background: var(--pastel_blue); } 
 
@@ -690,7 +690,7 @@
 
  .header .gnb.web .gnb_sub { display: none; position: absolute; left: 0; right: 0; width: 100%; height: auto !important; padding: 2.552vw 9.375vw 3.072vw 15.625vw; background-color: var(--basic-light-blue); box-sizing: border-box; z-index: 100; } 
 
- /* 클래스 nav 붙은 경우:메뉴에서 사용 */
+ /* í´ëž˜ìŠ¤ nav ë¶™ì€ ê²½ìš°:ë©”ë‰´ì—ì„œ ì‚¬ìš© */
  .header .gnb.web .gnb_sub.nav { display: block !important; height: 100vh !important; overflow-y: auto; top: 40px; padding: 4.6875vw 9.375vw 7.916vw !important; opacity: 1 !important; } 
 
  .header .gnb.web .gnb_sub.nav .icon_close { position: absolute; top: 1.65vw; right: 9.375vw; display: block; background: url(/resources/img/common/icon_close.svg) no-repeat; background-size: cover; } 
@@ -879,7 +879,7 @@
 
  .sub_title .explain { margin-bottom: 0.52083vw; font-size: min(1.25vw,24px); } 
 
- /* business title 영역 */
+ /* business title ì˜ì—­ */
  .sub_title2 .breadcrumbs ol li a { color: var(--white); } 
 
  .sub_title2 .breadcrumbs ol li a:before { background-color: var(--white); } 
@@ -1012,7 +1012,7 @@
 
  .history1 .slide .slide_item .info { margin: 0.72916vw 0 0 0; font-size: min(0.9375vw,18px); } 
 
- .history2 { margin: 5.2083vw 9.375vw 8.8541vw; gap: 2.6041vw; } 
+ .history2 {margin: 5.2083vw 9.375vw 8.8541vw;row-gap: 2.6041vw;justify-content: space-between;} 
 
  .history2 dl:first-child { padding: 2.6041vw 0 0 0; } 
 
@@ -1171,8 +1171,8 @@
  .business ul li .text p { margin-top: 1.0416vw; font-size: min(0.9375vw,18px) } 
  .business ul li .text .c_btn_wrap { margin: 1vw 0 0 0; text-align: left; } 
  
- .business ul li .text .c_btn_wrap .c_btn2 { padding: 0.7vw 1.65vw; font-size: 1.6rem; color: var(--basic_blue); line-height: 150%; border-color: var(--basic_blue); } 
-
+ .business ul li .text .c_btn_wrap .c_btn2 { padding: 0.7vw 1.65vw; font-size: min(0.9375vw,18px) } 
+ .business ul li .text .c_btn_wrap .c_btn2:after { width: 1.14583vw; height: 0.67708vw; margin-left:0.72916vw;background-size:contain; } 
  
  .business ul li .icon { position: relative; padding: 1.775vw 0 1.875vw 1.5625vw; border-radius: 0.52083vw; } 
  .business ul li .icon .sub_list li { width: 65%; font-size: min(0.833vw,16px); margin-bottom: 0.9375vw } 
@@ -1180,7 +1180,7 @@
  .business ul li .icon a img { position: absolute; top: 50%; right: 1.97916vw; width: 8.4375vw; margin: 0; transform: translate(0,-50%); } 
 
  .sub_title2.chemical { background-position-x: center; } 
- .sub_title2.material .info { gap: 4.05vw; padding: 2.60416vw 3.125vw 3.9vw; } 
+ .sub_title2.material .info { row-gap: 4.05vw; padding: 2.60416vw 3.125vw 3.9vw; } 
 
  .business.energy ul { column-gap: 0; } 
  .business.energy ul li, .business.energy ul li { align-items: flex-start; } 

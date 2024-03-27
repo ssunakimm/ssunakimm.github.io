@@ -1121,6 +1121,7 @@
 	border-radius: 50px;
 	border:1px solid var(--white);
 	box-sizing: border-box;
+	transition: all 0.35s ease-in-out !important;
 }
 .c_btn2:after {
 	content:'';
@@ -1132,21 +1133,9 @@
 	background-size: cover;
 }
 
-/* ----------------------------------------------------- 탭 -------------------------------------------------------- */
-.c_tab {position: relative;}
-.c_tab ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width:100%;
-	padding: 14px 0;
-	border-bottom: 1px solid var(--grey06);
+.c_btn2:hover { background-color: var(--white); color: var(--title_navy); } 
 
-}
-.c_tab ul li {width:43.33vw;text-align: center;}
-.c_tab ul li a {font-size: 1.6rem;line-height: 160%;color:var(--grey01);transition: all 0.35s;cursor: pointer;}
-.c_tab ul li.on a{font-weight:500;color:var(--basic_blue);}
-.c_tab_bar {position:absolute;left:0;bottom:0;width:43.33vw;height:2px;background-color:var(--basic_blue);margin:0 24px;}
+.c_btn2:hover:after {background: url(/resources/img/main/icon_arrow_right_black.svg) no-repeat; background-size: cover; } 
 
 
 /** WEB **/
@@ -1200,13 +1189,4 @@
 		width:1.25vw;
 		height: 0.833vw;
 	}
-
-	.c_tab ul {
-		padding: 1.09375vw 0;;
-	
-	}
-	.c_tab ul li {width:15.625vw;}
-	.c_tab ul li a {font-size: min(1.25vw,24px);}
-	.c_tab_bar {width:15.625vw;margin:0 34.427vw;}
-	
 }
