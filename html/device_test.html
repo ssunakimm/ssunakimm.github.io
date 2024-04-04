@@ -25,7 +25,7 @@
                 result = '모바일'
             }else {
                 
-                if(tabletRegex.test(userAgent) && navigator.maxTouchPoints == 5) {
+                if(tabletRegex.test(userAgent) || navigator.maxTouchPoints == 5) {
                     result = '아이패드'
                 }else {
                     result = 'pc'
