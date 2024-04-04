@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 여부 확인2_팀장님버전</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function checkDevice() {
+var deviceType;
+
+    // User-Agent 문자열을 가져옵니다.
+    var userAgent = navigator.userAgent.toLowerCase();
+
+    // 모바일, 태블릿, PC를 구분합니다.
+    if (/mobile/i.test(userAgent)) {
+        deviceType = 'M';
+    } else if (/tablet/i.test(userAgent) || (/ipad/i.test(userAgent) && !/mobile/i.test(userAgent))) {
+        deviceType = 'T';
+    } else {
+        deviceType = 'P';
+    }
+
+          
+            alert(deviceType);
+        }
+
+    $(document).ready(function(){
+        checkDevice();
+    })
+    </script>
+</head>
+<body>
+    <h1>사용 기기는 <span id="device-type"></span>입니다.</h1>
+</body>
+</html>
