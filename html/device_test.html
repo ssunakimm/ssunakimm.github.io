@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>모바일 여부 확인4</title>
+    <title>모바일 여부 확인5</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         function isMobile() {
@@ -29,10 +29,10 @@
                 tabletRegex.test(userAgent)
             ) {
                 // 태블릿으로 판단합니다. 안드로이드 태블릿은 'Android'가 포함되어 있으며 'Mobile'이 없는 경우입니다.
-                deviceType = 'T';
+                deviceType = 'T1';
             } else if (/macintosh/i.test(userAgent) && navigator.maxTouchPoints && navigator.maxTouchPoints > 4) {
                 // 아이패드의 최신 iOS 버전에서는 Macintosh가 포함되며, 터치 포인트를 사용하여 태블릿임을 식별합니다.
-                deviceType = 'T';
+                deviceType = 'T2';
             } else {
                 deviceType = 'P';
             }
