@@ -23,7 +23,7 @@
             // 모바일, 태블릿, PC를 구분합니다.
             if (/mobile/i.test(userAgent) && mobileRegex.test(userAgent)) {
                 deviceType = 'M';
-            } else if ((/tablet/i.test(userAgent) ||
+            } else if (/tablet/i.test(userAgent) ||
                 (/ipad/i.test(userAgent) && !/mobile/i.test(userAgent)) ||
                 (/android/i.test(userAgent) && !/mobile/i.test(userAgent)) ||
                 tabletRegex.test(userAgent)
