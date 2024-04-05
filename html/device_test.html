@@ -18,7 +18,7 @@
             var userAgent = navigator.userAgent.toLowerCase();
         
             const mobileRegex = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i;
-            const tabletRegex = /Tablet|iPad|Macintosh|NexusTablet|GoogleTablet|SamsungTablet|Kindle/i;
+            const tabletRegex = /Tablet|iPad|NexusTablet|GoogleTablet|SamsungTablet|Kindle/i;
 
             $('#agent2').text(/tablet/i.test(userAgent)+"/"+(/ipad/i.test(userAgent) && !/mobile/i.test(userAgent)) + "/" +(/android/i.test(userAgent) && !/mobile/i.test(userAgent)) +"/" +tabletRegex.test(userAgent))
             
@@ -32,7 +32,7 @@
             ) {
                 // 태블릿으로 판단합니다. 안드로이드 태블릿은 'Android'가 포함되어 있으며 'Mobile'이 없는 경우입니다.
                 deviceType = 'T1';
-            } else if (/macintosh/i.test(userAgent) && navigator.maxTouchPoints && navigator.maxTouchPoints > 4) {
+            } else if (/macintosh/i.test(userAgent) && navigator.maxTouchPoints && navigator.maxTouchPoints > 0) {
                 // 아이패드의 최신 iOS 버전에서는 Macintosh가 포함되며, 터치 포인트를 사용하여 태블릿임을 식별합니다.
                 deviceType = 'T2';
             } else {
