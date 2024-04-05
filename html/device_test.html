@@ -19,7 +19,9 @@
         
             const mobileRegex = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i;
             const tabletRegex = /Tablet|iPad|Macintosh|NexusTablet|GoogleTablet|SamsungTablet|Kindle/i;
-        
+
+            $('#agent2').text(/tablet/i.test(userAgent)+"/"+(/ipad/i.test(userAgent) && !/mobile/i.test(userAgent)) + "/" +(/android/i.test(userAgent) && !/mobile/i.test(userAgent)) +"/" +tabletRegex.test(userAgent))
+            
             // 모바일, 태블릿, PC를 구분합니다.
             if (/mobile/i.test(userAgent) && mobileRegex.test(userAgent)) {
                 deviceType = 'M';
@@ -48,5 +50,6 @@
 <body>
     <h1>사용 기기는 <span id="device-type"></span>입니다.</h1>
     <h2>agent <span id="agent"></span></h2>
+    <h2>agent2 <span id="agent2"></span></h2>
 </body>
 </html>
