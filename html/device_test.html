@@ -22,7 +22,11 @@
             
 
             if(mobileRegex.test(userAgent)) {
-                result = '모바일'
+                if(userAgent.indexof('mobile') > -1){
+                    result = '모바일'
+                }else {
+                    result = '갤탭'
+                }
             }else {
                 
                 if(tabletRegex.test(userAgent) || navigator.maxTouchPoints == 5) {
