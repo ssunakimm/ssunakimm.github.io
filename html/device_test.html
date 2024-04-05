@@ -29,7 +29,7 @@
                 }
             }else {
                 
-                if(tabletRegex.test(userAgent) || navigator.maxTouchPoints == 5) {
+                if(tabletRegex.test(userAgent) || navigator.maxTouchPoints > 4) {
                     result = '아이패드'
                 }else {
                     result = 'pc'
