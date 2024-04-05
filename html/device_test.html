@@ -32,14 +32,16 @@
                 }
             }
             alert(result);
+            $('#agent').text()
         }
 
-    $(document).ready(function(){
+    $(document).ready(function(userAgent){
         checkDevice();
     })
     </script>
 </head>
 <body>
     <h1>사용 기기는 <span id="device-type"></span>입니다.</h1>
+    <h2>agent <span id="agent"></span></h2>
 </body>
 </html>
