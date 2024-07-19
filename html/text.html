@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>모바일 여부 확인6</title>
+    <title>확인1</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         
 
     $(document).ready(function(userAgent){
-        
+        $('#addToContactsBtn').on('click', function(){
+            
+            addToContacts();
+        });
     })
         
-        document.getElementById('addToContactsBtn').addEventListener('click', function() {
-        addToContacts();
-    });
+        
 
     function addToContacts() {
         if ('contacts' in navigator) {
@@ -42,8 +43,6 @@
     <a href="tel:01050548420">전화 걸기</a>
     <a href="tel:010-5054-8420">전화 걸기</a>
     
-    <a href="wtai://wp/ap;01050548420">추가??</a>
-    <a href="wtai://wp/ap;01050548420">추가??</a>
     
     
     <button id="addToContactsBtn">주소록에 추가</button>
