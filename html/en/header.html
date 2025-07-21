@@ -11,10 +11,10 @@
     <div class="gnb_main">
         <h1><a href="/html/en/main.html"><img src="/resources/img/common/icon_logo.svg" alt="SAMSUNG C&T JAPAN"></a></h1>
         <ul>
-            <li class="on"><a href="">About Us</a></li>
-            <li><a href="">Business</a></li>
-            <li><a href="">Sustainability</a></li>
-            <li><a href="">Careers</a></li>
+            <li class="on"><a href="">ABOUT US</a></li>
+            <li><a href="">BUSINESS</a></li>
+            <li><a href="">SUSTAINABILITY</a></li>
+            <li><a href="">CAREERS</a></li>
             <li><a href="">PR</a></li>
         </ul>
         <div class="menu">
@@ -27,7 +27,8 @@
         <button type="button" class="icon icon_close" onclick="toggleMenuWeb('close')">CLOSE</button>
         <div data-gnb="1">
             <div class="img none">
-                <span>About Us</span>
+                <img src="/resources/img/common/img_gnb_thum1.jpg" alt="ABOUT US image" title="ABOUT US image">
+                <span>ABOUT US</span>
             </div>
             <ul>
                 <li><a href="/html/en/about-us/corporate-profile.html">Corporate Profile</a></li>
@@ -41,7 +42,8 @@
         </div>
         <div data-gnb="2">
             <div class="img none">
-                <span>Business</span>
+                <img src="/resources/img/common/img_gnb_thum2.jpg" alt="BUSINESS image" title="BUSINESS image">
+                <span>BUSINESS</span>
             </div>
             <ul>
                 <li><a href="/html/en/business/chemicals.html">Chemicals</a></li>
@@ -52,44 +54,47 @@
         </div>
         <div data-gnb="3">
             <div class="img none">
-                <span>Sustainability</span>
+                <img src="/resources/img/common/img_gnb_thum3.jpg" alt="SUSTAINABILITY image" title="SUSTAINABILITY image">
+                <span>SUSTAINABILITY</span>
             </div>
             <ul>
-                <li><a href="">Environment</a></li>
-                <li><a href="">Society</a></li>
-                <li><a href="">Compliance</a></li>
+                <li><a href="/html/en/sustainability/environment.html">Environment</a></li>
+                <li><a href="/html/en/sustainability/society.html">Society</a></li>
+                <li><a href="/html/en/sustainability/compliance.html">Compliance</a></li>
             </ul>
         </div>
         <div data-gnb="4">
             <div class="img none">
-                <span>Careers</span>
+                <img src="/resources/img/common/img_gnb_thum4.jpg" alt="CAREERS image" title="CAREERS image">
+                <span>CAREERS</span>
             </div>
             <ul>
-                <li><a href="">Career Guide</a></li>
-                <li><a href="">Culture</a></li>
+                <li><a href="/html/en/careers/career-guide.html">Career Guide</a></li>          
+                <li><a href="/html/en/careers/people.html">People</a></li>
                 <li><a href="/html/en/careers/process.html">Recruitment Procedure</a></li>
                 <li><a href="/html/en/careers/qna.html">Q&A</a></li>
             </ul>
         </div>
         <div data-gnb="5">
             <div class="img none">
+                <img src="/resources/img/common/img_gnb_thum5.jpg" alt="PR image" title="PR image">
                 <span>PR</span>
             </div>
             <ul>
                 <li><a href="/html/en/pr/news.html">News</a></li>
-                <li><a href="">Corporate Media</a></li>
+                <li><a href="/html/en/pr/corporate-media.html">Corporate Media</a></li>
                 <li><a href="https://www.samsungcnt.com/eng/ir/financial-info/financial-snapshot.do" target="_blank">Financial Information</a></li>
             </ul>
         </div>
     </div>
     <div class="gnb_search">
-        <div>
+        <form>
             <label>
-                <input type="text" placeholder="検索語を入力"/>
+                <input type="text" placeholder="Please enter your search"/>
             </label>
-            <button type="button" class="icon icon_search_close" onclick="removeSearchText()">close</button>
+            <button type="button" class="icon icon_search_close" onclick="removeSearchText(this)">close</button>
             <button type="button" class="icon icon_search">search</button>
-        </div>
+        </form>
     </div>
 </nav>        
 <nav class="gnb mobile">  
@@ -142,9 +147,9 @@
                     <button type="button" class="icon icon_toggle">menu_close</button>
                 </div>
                 <ul class="depth2">
-                    <li><a href="">Environment</a></li>
-                    <li><a href="">Society</a></li>
-                    <li><a href="">Compliance</a></li>
+                    <li><a href="/html/en/sustainability/environment.html">Environment</a></li>
+                    <li><a href="/html/en/sustainability/society.html">Society</a></li>
+                    <li><a href="/html/en/sustainability/compliance.html">Compliance</a></li>
                 </ul>
             </li>
             <li>
@@ -153,8 +158,8 @@
                     <button type="button" class="icon icon_toggle">menu_close</button>
                 </div>
                 <ul class="depth2">
-                    <li><a href="">Career Guide</a></li>
-                    <li><a href="">Culture</a></li>
+                    <li><a href="/html/en/careers/career-guide.html">Career Guide</a></li> 
+                    <li><a href="/html/en/careers/people.html">People</a></li>
                     <li><a href="/html/en/careers/process.html">Recruitment Procedure</a></li>
                     <li><a href="/html/en/careers/qna.html">Q&A</a></li>
                 </ul>
@@ -166,19 +171,19 @@
                 </div>
                 <ul class="depth2">
                     <li><a href="/html/en/pr/news.html">News</a></li>
-                    <li><a href="">Corporate Media</a></li>
+                    <li><a href="/html/en/pr/corporate-media.html">Corporate Media</a></li>
                     <li><a href="https://www.samsungcnt.com/eng/ir/financial-info/financial-snapshot.do" target="_blank">Financial Information</a></li>
                 </ul>
             </li>
         </ul> 
     </div>
     <div class="gnb_search">
-        <div>
+        <form>
             <label>
-                <input type="text" placeholder="検索語を入力"/>
+                <input type="text" placeholder="Please enter your search"/>
             </label>
-            <button type="button" class="icon icon_search_close" onclick="removeSearchText()">close</button>
+            <button type="button" class="icon icon_search_close" onclick="removeSearchText(this)">close</button>
             <button type="button" class="icon icon_search">search</button>
-        </div>
+        </form>
     </div>     
 </nav>

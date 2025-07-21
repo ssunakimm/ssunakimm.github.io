@@ -27,6 +27,7 @@
         <button type="button" class="icon icon_close" onclick="toggleMenuWeb('close')">CLOSE</button>
         <div data-gnb="1">
             <div class="img none">
+                <img src="/resources/img/common/img_gnb_thum1.jpg" alt="会社情報 image" title="会社情報 image">
                 <span>会社情報</span>
             </div>
             <ul>
@@ -41,6 +42,7 @@
         </div>
         <div data-gnb="2">
             <div class="img none">
+                <img src="/resources/img/common/img_gnb_thum2.jpg" alt="事業紹介 image" title="事業紹介 image">
                 <span>事業紹介</span>
             </div>
             <ul>
@@ -52,44 +54,47 @@
         </div>
         <div data-gnb="3">
             <div class="img none">
+                <img src="/resources/img/common/img_gnb_thum3.jpg" alt="サステナビリティ image" title="サステナビリティ image">
                 <span>サステナビリティ</span>
             </div>
             <ul>
-                <li><a href="">環境</a></li>
-                <li><a href="">社会</a></li>
-                <li><a href="">コンプライアンス</a></li>
+                <li><a href="/html/sustainability/environment.html">環境</a></li>
+                <li><a href="/html/sustainability/society.html">社会</a></li>
+                <li><a href="/html/sustainability/compliance.html">コンプライアンス</a></li>
             </ul>
         </div>
         <div data-gnb="4">
             <div class="img none">
+                <img src="/resources/img/common/img_gnb_thum4.jpg" alt="採用情報 image" title="採用情報 image">
                 <span>採用情報</span>
             </div>
             <ul>
-                <li><a href="">キャリアガイド</a></li>
-                <li><a href="">カルチャー</a></li>
+                <li><a href="/html/careers/career-guide.html">キャリアガイド</a></li>
+                <li><a href="/html/careers/people.html">社員紹介</a></li>
                 <li><a href="/html/careers/process.html">採用プロセス</a></li>
                 <li><a href="/html/careers/qna.html">Q&A</a></li>
             </ul>
         </div>
         <div data-gnb="5">
             <div class="img none">
+                <img src="/resources/img/common/img_gnb_thum5.jpg" alt="PR image" title="PR image">
                 <span>PR</span>
             </div>
             <ul>
-                <li><a href="">ニュース</a></li>
-                <li><a href="">広報資料</a></li>
+                <li><a href="/html/pr/news.html">ニュース</a></li>
+                <li><a href="/html/pr/corporate-media.html">広報資料</a></li>
                 <li><a href="https://www.samsungcnt.com/eng/ir/financial-info/financial-snapshot.do" target="_blank">財務データ</a></li>
             </ul>
         </div>
     </div>
     <div class="gnb_search">
-        <div>
+        <form>
             <label>
                 <input type="text" placeholder="検索語を入力"/>
             </label>
-            <button type="button" class="icon icon_search_close" onclick="removeSearchText()">close</button>
+            <button type="button" class="icon icon_search_close" onclick="removeSearchText(this)">close</button>
             <button type="button" class="icon icon_search">search</button>
-        </div>
+        </form>
     </div>
 </nav>        
 <nav class="gnb mobile">  
@@ -142,9 +147,9 @@
                     <button type="button" class="icon icon_toggle">menu_close</button>
                 </div>
                 <ul class="depth2">
-                    <li><a href="">環境</a></li>
-                    <li><a href="">社会</a></li>
-                    <li><a href="">コンプライアンス</a></li>
+                    <li><a href="/html/sustainability/environment.html">環境</a></li>
+                    <li><a href="/html/sustainability/society.html">社会</a></li>
+                    <li><a href="/html/sustainability/compliance.html">コンプライアンス</a></li>
                 </ul>
             </li>
             <li>
@@ -153,8 +158,8 @@
                     <button type="button" class="icon icon_toggle">menu_close</button>
                 </div>
                 <ul class="depth2">
-                    <li><a href="">キャリアガイド</a></li>
-                    <li><a href="">カルチャー</a></li>
+                    <li><a href="/html/careers/career-guide.html">キャリアガイド</a></li>
+                    <li><a href="/html/careers/people.html">社員紹介</a></li>
                     <li><a href="/html/careers/process.html">採用プロセス</a></li>
                     <li><a href="/html/careers/qna.html">Q&A</a></li>
                 </ul>
@@ -165,20 +170,20 @@
                     <button type="button" class="icon icon_toggle" onclick="toggleGnbMenuMobile(this)">menu_close</button>
                 </div>
                 <ul class="depth2">
-                    <li><a href="">ニュース</a></li>
-                    <li><a href="">広報資料</a></li>
+                    <li><a href="/html/pr/news.html">ニュース</a></li>
+                    <li><a href="/html/pr/corporate-media.html">広報資料</a></li>
                     <li><a href="https://www.samsungcnt.com/eng/ir/financial-info/financial-snapshot.do" target="_blank">財務データ</a></li>
                 </ul>
             </li>
         </ul> 
     </div>
     <div class="gnb_search">
-        <div>
+        <form>
             <label>
                 <input type="text" placeholder="検索語を入力"/>
             </label>
-            <button type="button" class="icon icon_search_close" onclick="removeSearchText()">close</button>
+            <button type="button" class="icon icon_search_close" onclick="removeSearchText(this)">close</button>
             <button type="button" class="icon icon_search">search</button>
-        </div>
+        </form>
     </div>     
 </nav>
