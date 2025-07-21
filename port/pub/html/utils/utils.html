@@ -1,0 +1,917 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <title>Utils</title>
+
+    <link rel="apple-touch-icon" href="/resources/img/common/favicon.ico">
+    <link rel="icon" href="/resources/img/common/favicon.ico">
+    <link rel="shortcut icon" href="/resources/img/common/favicon.ico">
+
+    <link rel="stylesheet" href="/resources/css/style.css"/>    
+    <link rel="stylesheet" href="/resources/css/aos.css"/>    
+    <script src="/resources/js/jquery.min.js"></script>    
+    <script src="/resources/js/aos.js"></script>       
+    <script src="/resources/js/include.js"></script>         
+    <script src="/resources/js/common.js"></script>  
+
+    <style>
+        body {
+            font-size: 14px;
+            padding: 0 20px;
+            overflow: auto;
+        }
+
+        h1 {
+            font-weight: 700;
+            margin:40px 0;
+        }
+
+        h2 {
+            padding: 35px;
+            background: #f5f5f5;
+            font-weight: 700;
+        }
+        h3 {
+            padding-bottom: 20px;;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+        }
+
+        .option li:first-child {
+            width: 130px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .option li {
+            padding: 20px;
+            line-height: 25px;
+        }
+        .item {display: flex;flex-wrap: wrap;}
+        .item li {
+            width:50%;
+            
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .d_flex {
+            gap: 30px;
+        }
+        .colorscripter-code-table {
+            width:100%;
+        }
+        .colorscripter-code div {
+            white-space: inherit !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Selectors</h1>
+
+    <h2>Radio</h2>
+    <ul class="item">
+        <li>
+            <div class="d_flex">
+                <div class="c_radio">
+                    <input type="radio" id="radio1" name="radio-gruop" />
+                    <label for="radio1">text1</label>
+                </div>
+
+                <div class="c_radio">
+                    <input type="radio" id="radio2" name="radio-gruop" />
+                    <label for="radio2">text2</label>
+                </div>
+
+                <div class="c_radio disabled">
+                    <input type="radio" id="radiotest0" name="radio-test1" checked disabled />
+                    <label for="radiotest0">text1</label>
+                </div>
+
+                <div class="c_radio disabled">
+                    <input type="radio" id="radiotest1" name="radio-test1" disabled />
+                    <label for="radiotest1">text2</label>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="colorscripter-code"
+                style="color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto">
+                <table class="colorscripter-code-table"
+                    style="margin: 0; padding: 0; border: none; background-color: #272727; border-radius: 4px"
+                    cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                            <div style="
+                                        margin: 0;
+                                        padding: 0;
+                                        word-break: normal;
+                                        text-align: right;
+                                        color: #aaa;
+                                        font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+                                        line-height: 130%;
+                                    ">
+                                <div style="line-height: 130%">1</div>
+                                <div style="line-height: 130%">2</div>
+                                <div style="line-height: 130%">3</div>
+                                <div style="line-height: 130%">4</div>
+                                <div style="line-height: 130%">5</div>
+                                <div style="line-height: 130%">6</div>
+                                <div style="line-height: 130%">7</div>
+                                <div style="line-height: 130%">8</div>
+                                <div style="line-height: 130%">9</div>
+                            </div>
+                        </td>
+                        <td style="padding: 6px 0; text-align: left">
+                            <div
+                                style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%">
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span
+                                        style="color: #ff3399">div</span>&nbsp;<span
+                                        style="color: #a8ff58">class</span>=<span
+                                        style="color: #ffd500">"c_radio"</span><span style="color: #a8ff58"></span><span
+                                        style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span
+                                        style="color: #ff3399">input</span>&nbsp;<span
+                                        style="color: #a8ff58">type</span>=<span
+                                        style="color: #ffd500">"radio"</span><span
+                                        style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">id</span>=<span
+                                        style="color: #ffd500">"radio1"</span><span
+                                        style="color: #a8ff58"></span>&nbsp;<span
+                                        style="color: #a8ff58">name</span>=<span
+                                        style="color: #ffd500">"radio-gruop"</span><span
+                                        style="color: #a8ff58">/</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span
+                                        style="color: #ff3399">label</span>&nbsp;<span
+                                        style="color: #a8ff58">for</span>=<span
+                                        style="color: #ffd500">"radio1"</span><span style="color: #a8ff58"></span><span
+                                        style="color: #f0f0f0">&gt;</span>text1<span
+                                        style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span
+                                        style="color: #ff3399">label</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span
+                                        style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">&nbsp;&nbsp;</div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span
+                                        style="color: #ff3399">div</span>&nbsp;<span
+                                        style="color: #a8ff58">class</span>=<span
+                                        style="color: #ffd500">"c_radio"</span><span style="color: #a8ff58"></span><span
+                                        style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span
+                                        style="color: #ff3399">input</span>&nbsp;<span
+                                        style="color: #a8ff58">type</span>=<span
+                                        style="color: #ffd500">"radio"</span><span
+                                        style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">id</span>=<span
+                                        style="color: #ffd500">"radio2"</span><span
+                                        style="color: #a8ff58"></span>&nbsp;<span
+                                        style="color: #a8ff58">name</span>=<span
+                                        style="color: #ffd500">"radio-gruop"</span><span
+                                        style="color: #a8ff58">/</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span
+                                        style="color: #ff3399">label</span>&nbsp;<span
+                                        style="color: #a8ff58">for</span>=<span
+                                        style="color: #ffd500">"radio2"</span><span style="color: #a8ff58"></span><span
+                                        style="color: #f0f0f0">&gt;</span>text2<span
+                                        style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span
+                                        style="color: #ff3399">label</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span
+                                        style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div
+                                style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%">
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span
+                                        style="color: #ff3399">div</span>&nbsp;<span
+                                        style="color: #a8ff58">class</span>=<span
+                                        style="color: #ffd500">"c_radio disabled"</span><span style="color: #a8ff58"></span><span
+                                        style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span
+                                        style="color: #ff3399">input</span>&nbsp;<span
+                                        style="color: #a8ff58">type</span>=<span
+                                        style="color: #ffd500">"radio"</span><span
+                                        style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">id</span>=<span
+                                        style="color: #ffd500">"radio1"</span><span
+                                        style="color: #a8ff58"></span>&nbsp;<span
+                                        style="color: #a8ff58">name</span>=<span
+                                        style="color: #ffd500">"radio-gruop" disabled </span><span
+                                        style="color: #a8ff58">/</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span
+                                        style="color: #ff3399">label</span>&nbsp;<span
+                                        style="color: #a8ff58">for</span>=<span
+                                        style="color: #ffd500">"radio1"</span><span style="color: #a8ff58"></span><span
+                                        style="color: #f0f0f0">&gt;</span>text1<span
+                                        style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span
+                                        style="color: #ff3399">label</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span
+                                        style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">&nbsp;&nbsp;</div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span
+                                        style="color: #ff3399">div</span>&nbsp;<span
+                                        style="color: #a8ff58">class</span>=<span
+                                        style="color: #ffd500">"c_radio disabled"</span><span style="color: #a8ff58"></span><span
+                                        style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span
+                                        style="color: #ff3399">input</span>&nbsp;<span
+                                        style="color: #a8ff58">type</span>=<span
+                                        style="color: #ffd500">"radio"</span><span
+                                        style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">id</span>=<span
+                                        style="color: #ffd500">"radio2"</span><span
+                                        style="color: #a8ff58"></span>&nbsp;<span
+                                        style="color: #a8ff58">name</span>=<span
+                                        style="color: #ffd500">"radio-gruop" disabled </span><span
+                                        style="color: #a8ff58">/</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span
+                                        style="color: #ff3399">label</span>&nbsp;<span
+                                        style="color: #a8ff58">for</span>=<span
+                                        style="color: #ffd500">"radio2"</span><span style="color: #a8ff58"></span><span
+                                        style="color: #f0f0f0">&gt;</span>text2<span
+                                        style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span
+                                        style="color: #ff3399">label</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span
+                                        style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                            </div>
+                            <div
+                                style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic">
+                                <a href="http://colorscripter.com/info#e" target="_blank"
+                                    style="color: #4f4f4f; text-decoration: none">Colored by Color Scripter</a>
+                            </div>
+                        </td>
+                        <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                            <a href="http://colorscripter.com/info#e" target="_blank"
+                                style="text-decoration: none; color: white"><span
+                                    style="font-size: 9px; word-break: normal; background-color: #4f4f4f; color: white; border-radius: 10px; padding: 1px">cs</span></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+    </ul>
+
+    <!--h2>Checkbox</h2>
+    <ul class="item">
+        <li>
+            <div class="d_flex">
+                <div class="c_check">
+                    <input type="checkbox" id="check_L1">
+                    <label for="check_L1">체크박스</label>
+                </div>
+
+                <div class="c_check">
+                    <input type="checkbox" id="check_L2" checked="true">
+                    <label for="check_L2">체크 - checked="true" </label>
+                </div>
+
+                <div class="c_check">
+                    <input type="checkbox" id="check_L3" disabled="true">
+                    <label for="check_L3">비활성화 - disabled="true"</label>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="colorscripter-code" style="color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto">
+                <table class="colorscripter-code-table" style="margin: 0; padding: 0; border: none; background-color: #272727; border-radius: 4px" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                        <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                            <div style="
+                                        margin: 0;
+                                        padding: 0;
+                                        word-break: normal;
+                                        text-align: right;
+                                        color: #aaa;
+                                        font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+                                        line-height: 130%;
+                                    ">
+                                <div style="line-height: 130%">1</div>
+                                <div style="line-height: 130%">2</div>
+                                <div style="line-height: 130%">3</div>
+                                <div style="line-height: 130%">4</div>
+                            </div>
+                        </td>
+                        <td style="padding: 6px 0; text-align: left">
+                            <div style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%">
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">div</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_check&nbsp;"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">input</span>&nbsp;<span style="color: #a8ff58">type</span>=<span style="color: #ffd500">"checkbox"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">id</span>=<span style="color: #ffd500">"check_L1"</span><span style="color: #a8ff58">/</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">label</span>&nbsp;<span style="color: #a8ff58">for</span>=<span style="color: #ffd500">"check_L1"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>체크박스<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">label</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                            </div>
+                            <div style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic">
+                                <a href="http://colorscripter.com/info#e" target="_blank" style="color: #4f4f4f; text-decoration: none">Colored by Color Scripter</a>
+                            </div>
+                        </td>
+                        <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                            <a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration: none; color: white"><span style="font-size: 9px; word-break: normal; background-color: #4f4f4f; color: white; border-radius: 10px; padding: 1px">cs</span></a>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </li>
+    </ul>
+    <ul-- class="item">
+        <li>
+            <div class="d_flex">
+                <div class="c_check single">
+                    <input type="checkbox" id="check_S1">
+                    <label for="check_S1"></label>
+                </div>
+
+                <div class="c_check single">
+                    <input type="checkbox" id="check_S2" checked="true">
+                    <label for="check_S2"></label>
+                </div>
+
+                <div class="c_check single">
+                    <input type="checkbox" id="check_S3" disabled="true">
+                    <label for="check_S3"></label>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="colorscripter-code" style="color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto">
+                <table class="colorscripter-code-table" style="margin: 0; padding: 0; border: none; background-color: #272727; border-radius: 4px" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                        <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                            <div style="
+                                        margin: 0;
+                                        padding: 0;
+                                        word-break: normal;
+                                        text-align: right;
+                                        color: #aaa;
+                                        font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+                                        line-height: 130%;
+                                    ">
+                                <div style="line-height: 130%">1</div>
+                                <div style="line-height: 130%">2</div>
+                                <div style="line-height: 130%">3</div>
+                                <div style="line-height: 130%">4</div>
+                            </div>
+                        </td>
+                        <td style="padding: 6px 0; text-align: left">
+                            <div style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%">
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">div</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_check&nbsp;single"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">input</span>&nbsp;<span style="color: #a8ff58">type</span>=<span style="color: #ffd500">"checkbox"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">id</span>=<span style="color: #ffd500">"check_S1"</span><span style="color: #a8ff58">/</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">label</span>&nbsp;<span style="color: #a8ff58">for</span>=<span style="color: #ffd500">"check_S1"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span><span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">label</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                            </div>
+                            <div style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic">
+                                <a href="http://colorscripter.com/info#e" target="_blank" style="color: #4f4f4f; text-decoration: none">Colored by Color Scripter</a>
+                            </div>
+                        </td>
+                        <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                            <a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration: none; color: white"><span style="font-size: 9px; word-break: normal; background-color: #4f4f4f; color: white; border-radius: 10px; padding: 1px">cs</span></a>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </li>
+    </ul-->
+
+    <h2>Input</h2>
+    <ul class="item">
+        <li>
+        <h3>Default &amp; Filled</h3>
+        <!-- Default -->
+        <div class="c_text">
+            <label class="c_label">
+            <input  class="c_txt-input" type="text" placeholder="placeholder">
+            </label>
+        </div>
+        </li>
+        <li>
+        <div class="colorscripter-code" style="color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto">
+            <table class="colorscripter-code-table" style="margin: 0; padding: 0; border: none; background-color: #272727; border-radius: 4px" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+                <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                <div style="
+                    margin: 0;
+                    padding: 0;
+                    word-break: normal;
+                    text-align: right;
+                    color: #aaa;
+                    font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+                    line-height: 130%;
+                    ">
+                    <div style="line-height: 130%">1</div>
+                    <div style="line-height: 130%">2</div>
+                    <div style="line-height: 130%">3</div>
+                    <div style="line-height: 130%">4</div>
+                    <div style="line-height: 130%">5</div>
+                </div>
+                </td>
+                <td style="padding: 6px 0; text-align: left">
+                <div style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%">
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">div</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_text"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">label</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_label&nbsp;"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">input</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_txt-input"</span>&nbsp;<span style="color: #a8ff58">type</span>=<span style="color: #ffd500">"text"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">placeholder</span>=<span style="color: #ffd500">"placeholder"</span><span style="color: #a8ff58"></span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">/</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">label</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                </div>
+                <div style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic">
+                    <a href="http://colorscripter.com/info#e" target="_blank" style="color: #4f4f4f; text-decoration: none">Colored by Color Scripter</a>
+                </div>
+                </td>
+                <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                <a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration: none; color: white"><span style="font-size: 9px; word-break: normal; background-color: #4f4f4f; color: white; border-radius: 10px; padding: 1px">cs</span></a>
+                </td>
+            </tr>
+            </tbody></table>
+        </div>
+        </li>
+    </ul>
+    <ul class="item">
+        <li>
+        <h3>Disabled</h3>
+        <!-- Disabled -->
+        <div class="c_text disabled">
+            <label class="c_label">
+            <input  class="c_txt-input" type="text" placeholder="placeholder" disabled="">
+            </label>
+        </div>
+        </li>
+        <li>
+        <div class="colorscripter-code" style="color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto">
+            <table class="colorscripter-code-table" style="margin: 0; padding: 0; border: none; background-color: #272727; border-radius: 4px" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+                <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                <div style="
+                    margin: 0;
+                    padding: 0;
+                    word-break: normal;
+                    text-align: right;
+                    color: #aaa;
+                    font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+                    line-height: 130%;
+                    ">
+                    <div style="line-height: 130%">1</div>
+                    <div style="line-height: 130%">2</div>
+                    <div style="line-height: 130%">3</div>
+                    <div style="line-height: 130%">4</div>
+                    <div style="line-height: 130%">5</div>
+                </div>
+                </td>
+                <td style="padding: 6px 0; text-align: left">
+                <div style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%">
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">div</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_text&nbsp;disabled"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">label</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_label&nbsp;"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">input</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_txt-input"</span>&nbsp;<span style="color: #a8ff58">type</span>=<span style="color: #ffd500">"text"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">placeholder</span>=<span style="color: #ffd500">"placeholder"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">disabled</span>&nbsp;<span style="color: #a8ff58">/</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">label</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                </div>
+                <div style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic">
+                    <a href="http://colorscripter.com/info#e" target="_blank" style="color: #4f4f4f; text-decoration: none">Colored by Color Scripter</a>
+                </div>
+                </td>
+                <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                <a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration: none; color: white"><span style="font-size: 9px; word-break: normal; background-color: #4f4f4f; color: white; border-radius: 10px; padding: 1px">cs</span></a>
+                </td>
+            </tr>
+            </tbody></table>
+        </div>
+        </li>
+    </ul>
+    <ul class="item">
+        <li>
+        <h3>Error</h3>
+        <!-- Error -->
+        <div class="c_text error">
+                <label class="c_label">
+                <input  class="c_txt-input" type="text" placeholder="placeholder">
+            </label>
+        </div>
+        <p class="c_error_text" style="display: block;">Error description</p>
+        </li>
+        <li>
+        <div class="colorscripter-code" style="color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto">
+            <table class="colorscripter-code-table" style="margin: 0; padding: 0; border: none; background-color: #272727; border-radius: 4px" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+                <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                <div style="
+                    margin: 0;
+                    padding: 0;
+                    word-break: normal;
+                    text-align: right;
+                    color: #aaa;
+                    font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+                    line-height: 130%;
+                    ">
+                    <div style="line-height: 130%">1</div>
+                    <div style="line-height: 130%">2</div>
+                    <div style="line-height: 130%">3</div>
+                    <div style="line-height: 130%">4</div>
+                    <div style="line-height: 130%">5</div>
+                    <div style="line-height: 130%">6</div>
+                </div>
+                </td>
+                <td style="padding: 6px 0; text-align: left">
+                <div style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%">
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">div</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_text&nbsp;error"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">label</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_label&nbsp;"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">input</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_txt-input"</span>&nbsp;<span style="color: #a8ff58">type</span>=<span style="color: #ffd500">"text"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">placeholder</span>=<span style="color: #ffd500">"placeholder"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">/</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">label</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">p</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_error_text"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>Error&nbsp;description<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">p</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                </div>
+                <div style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic">
+                    <a href="http://colorscripter.com/info#e" target="_blank" style="color: #4f4f4f; text-decoration: none">Colored by Color Scripter</a>
+                </div>
+                </td>
+                <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                <a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration: none; color: white"><span style="font-size: 9px; word-break: normal; background-color: #4f4f4f; color: white; border-radius: 10px; padding: 1px">cs</span></a>
+                </td>
+            </tr>
+            </tbody></table>
+        </div>
+        </li>
+    </ul>
+
+    <h2>Textarea</h2>
+    <ul class="item">
+        <li>
+          <h3>Default &amp; Filled</h3>
+          <!-- Default -->
+          <div class="c_text">
+            <label class="c_label textarea">
+              <textarea placeholder="placeholder"  onblur="inputBlur(this)"></textarea>
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="colorscripter-code" style="color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto">
+            <table class="colorscripter-code-table" style="margin: 0; padding: 0; border: none; background-color: #272727; border-radius: 4px" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                  <div style="
+                      margin: 0;
+                      padding: 0;
+                      word-break: normal;
+                      text-align: right;
+                      color: #aaa;
+                      font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+                      line-height: 130%;
+                    ">
+                    <div style="line-height: 130%">1</div>
+                    <div style="line-height: 130%">2</div>
+                    <div style="line-height: 130%">3</div>
+                    <div style="line-height: 130%">4</div>
+                    <div style="line-height: 130%">5</div>
+                  </div>
+                </td>
+                <td style="padding: 6px 0; text-align: left">
+                  <div style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%">
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">div</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_text"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">label</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_label&nbsp;textarea"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">textarea</span>&nbsp;<span style="color: #a8ff58">placeholder</span>=<span style="color: #ffd500">"placeholder"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span><span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">textarea</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">label</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                  </div>
+                  <div style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic">
+                    <a href="http://colorscripter.com/info#e" target="_blank" style="color: #4f4f4f; text-decoration: none">Colored by Color Scripter</a>
+                  </div>
+                </td>
+                <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                  <a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration: none; color: white"><span style="font-size: 9px; word-break: normal; background-color: #4f4f4f; color: white; border-radius: 10px; padding: 1px">cs</span></a>
+                </td>
+              </tr>
+            </tbody></table>
+          </div>
+        </li>
+      </ul>
+      <ul class="item">
+        <li>
+          <h3>Disabled</h3>
+          <!-- Disabled -->
+          <div class="c_text disabled">
+            <label class="c_label textarea">
+              <textarea placeholder="placeholder" disabled=""></textarea>
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="colorscripter-code" style="color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto">
+            <table class="colorscripter-code-table" style="margin: 0; padding: 0; border: none; background-color: #272727; border-radius: 4px" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                  <div style="
+                      margin: 0;
+                      padding: 0;
+                      word-break: normal;
+                      text-align: right;
+                      color: #aaa;
+                      font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+                      line-height: 130%;
+                    ">
+                    <div style="line-height: 130%">1</div>
+                    <div style="line-height: 130%">2</div>
+                    <div style="line-height: 130%">3</div>
+                    <div style="line-height: 130%">4</div>
+                    <div style="line-height: 130%">5</div>
+                  </div>
+                </td>
+                <td style="padding: 6px 0; text-align: left">
+                  <div style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%">
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">div</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_text&nbsp;disabled"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">label</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_label&nbsp;textarea"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">textarea</span>&nbsp;<span style="color: #a8ff58">placeholder</span>=<span style="color: #ffd500">"placeholder"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">disabled</span><span style="color: #f0f0f0">&gt;</span><span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">textarea</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">label</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                  </div>
+                  <div style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic">
+                    <a href="http://colorscripter.com/info#e" target="_blank" style="color: #4f4f4f; text-decoration: none">Colored by Color Scripter</a>
+                  </div>
+                </td>
+                <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                  <a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration: none; color: white"><span style="font-size: 9px; word-break: normal; background-color: #4f4f4f; color: white; border-radius: 10px; padding: 1px">cs</span></a>
+                </td>
+              </tr>
+            </tbody></table>
+          </div>
+        </li>
+      </ul>
+      <ul class="item">
+        <li>
+          <h3>Error</h3>
+          <!-- Error -->
+          <div class="c_text error">
+            <label class="c_label textarea">
+              <textarea placeholder="placeholder"></textarea>
+            </label>
+            </div>
+        <p class="c_error_text" style="display: block;">Error description</p>
+        </li>
+        <li>
+          <div class="colorscripter-code" style="color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto">
+            <table class="colorscripter-code-table" style="margin: 0; padding: 0; border: none; background-color: #272727; border-radius: 4px" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                  <div style="
+                      margin: 0;
+                      padding: 0;
+                      word-break: normal;
+                      text-align: right;
+                      color: #aaa;
+                      font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+                      line-height: 130%;
+                    ">
+                    <div style="line-height: 130%">1</div>
+                    <div style="line-height: 130%">2</div>
+                    <div style="line-height: 130%">3</div>
+                    <div style="line-height: 130%">4</div>
+                    <div style="line-height: 130%">5</div>
+                    <div style="line-height: 130%">6</div>
+                  </div>
+                </td>
+                <td style="padding: 6px 0; text-align: left">
+                  <div style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%">
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">div</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_text&nbsp;error"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">label</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_label&nbsp;textarea"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">textarea</span>&nbsp;<span style="color: #a8ff58">placeholder</span>=<span style="color: #ffd500">"placeholder"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span><span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">textarea</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">label</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">p</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"c_error_text"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>Error&nbsp;description<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">p</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                    <div style="background-color: #303030; padding: 0 6px; white-space: pre; line-height: 130%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                    </div>
+                  </div>
+                  <div style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic">
+                    <a href="http://colorscripter.com/info#e" target="_blank" style="color: #4f4f4f; text-decoration: none">Colored by Color Scripter</a>
+                  </div>
+                </td>
+                <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                  <a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration: none; color: white"><span style="font-size: 9px; word-break: normal; background-color: #4f4f4f; color: white; border-radius: 10px; padding: 1px">cs</span></a>
+                </td>
+              </tr>
+            </tbody></table>
+          </div>
+        </li>
+      </ul>
+
+
+
+
+    <!--h2>Dropdown</h2>
+    <ul>
+        <li>
+            <div class="dropdown w_200">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li onclick="dropdownSelect(this)"><a class="dropdown-item" href="#">Report</a></li>
+                    <li onclick="dropdownSelect(this)"><a class="dropdown-item" href="#">Group Data Report</a></li>
+                </ul>
+            </div>
+        </li>   
+        <li>
+            <div class="colorscripter-code" style="color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto">
+                <table class="colorscripter-code-table" style="margin: 0; padding: 0; border: none; background-color: #272727; border-radius: 4px" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                        <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                            <div style="
+                                    margin: 0;
+                                    padding: 0;
+                                    word-break: normal;
+                                    text-align: right;
+                                    color: #aaa;
+                                    font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+                                    line-height: 130%;
+                                ">
+                                <div style="line-height: 130%">1</div>
+                                <div style="line-height: 130%">2</div>
+                                <div style="line-height: 130%">3</div>
+                                <div style="line-height: 130%">4</div>
+                                <div style="line-height: 130%">5</div>
+                                <div style="line-height: 130%">6</div>
+                                <div style="line-height: 130%">7</div>
+                            </div>
+                        </td>
+                        <td style="padding: 6px 0; text-align: left">
+                            <div style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%">
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">div</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"dropdown&nbsp;w_200"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">button</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"btn&nbsp;btn-secondary&nbsp;dropdown-toggle"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">type</span>=<span style="color: #ffd500">"button"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">id</span>=<span style="color: #ffd500">"dropdownMenuButton1"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">data-bs-toggle</span>=<span style="color: #ffd500">"dropdown"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">aria-expanded</span>=<span style="color: #ffd500">"false"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>Dropdown&nbsp;button<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">button</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">ul</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"dropdown-menu"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">aria-labelledby</span>=<span style="color: #ffd500">"dropdownMenuButton1"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">li</span>&nbsp;<span style="color: #a8ff58">onclick</span>=<span style="color: #ffd500">"dropdownSelect(this)"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span><span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">a</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"dropdown-item"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">href</span>=<span style="color: #ffd500">"#"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>Report<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">a</span><span style="color: #f0f0f0">&gt;</span><span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">li</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">li</span>&nbsp;<span style="color: #a8ff58">onclick</span>=<span style="color: #ffd500">"dropdownSelect(this)"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span><span style="color: #f0f0f0">&lt;</span><span style="color: #ff3399">a</span>&nbsp;<span style="color: #a8ff58">class</span>=<span style="color: #ffd500">"dropdown-item"</span><span style="color: #a8ff58"></span>&nbsp;<span style="color: #a8ff58">href</span>=<span style="color: #ffd500">"#"</span><span style="color: #a8ff58"></span><span style="color: #f0f0f0">&gt;</span>Group&nbsp;Data&nbsp;Report<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">a</span><span style="color: #f0f0f0">&gt;</span><span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">li</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">ul</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                                <div style="padding: 0 6px; white-space: pre; line-height: 130%">
+                                    <span style="color: #f0f0f0">&lt;</span><span style="color: #f0f0f0">/</span><span style="color: #ff3399">div</span><span style="color: #f0f0f0">&gt;</span>
+                                </div>
+                            </div>
+                            <div style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic">
+                                <a href="http://colorscripter.com/info#e" target="_blank" style="color: #4f4f4f; text-decoration: none">Colored by Color Scripter</a>
+                            </div>
+                        </td>
+                        <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                            <a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration: none; color: white"><span style="font-size: 9px; word-break: normal; background-color: #4f4f4f; color: white; border-radius: 10px; padding: 1px">cs</span></a>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </li>         
+    </ul>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>

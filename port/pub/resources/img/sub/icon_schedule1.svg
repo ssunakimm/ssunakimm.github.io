@@ -1,0 +1,20 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 811">
+<mask id="mask0_1027_10029" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+<rect id="Rectangle 501" width="16" height="16" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_1027_10029)">
+<g id="Group 810">
+<line id="Line 93" x1="0.835938" y1="10.1225" x2="15.5559" y2="10.1225" stroke="black" stroke-width="0.875039"/>
+<line id="Line 94" x1="2.75586" y1="12.0422" x2="13.6359" y2="12.0422" stroke="black" stroke-width="0.875039"/>
+<line id="Line 95" x1="4.67578" y1="13.9621" x2="11.7158" y2="13.9621" stroke="black" stroke-width="0.875039"/>
+<path id="Ellipse 96" d="M3.24973 10.0914C3.50022 7.76369 5.59553 5.90896 8.19586 5.90896C10.7962 5.90896 12.8915 7.76369 13.142 10.0914H8.19586H3.24973Z" stroke="black" stroke-width="0.937542"/>
+<line id="Line 98" x1="7.67189" y1="1.60034" x2="7.67189" y2="4.16034" stroke="black" stroke-width="0.875039"/>
+<line id="Line 99" x1="2.88164" y1="3.1208" x2="4.60563" y2="4.8448" stroke="black" stroke-width="0.875039"/>
+<line id="Line 100" x1="0.331686" y1="6.90044" x2="2.64832" y2="7.66039" stroke="black" stroke-width="0.875039"/>
+<line id="Line 101" y1="-0.43752" x2="2.4381" y2="-0.43752" transform="matrix(-0.707107 0.707107 0.707107 0.707107 13.498 3.43018)" stroke="black" stroke-width="0.875039"/>
+<line id="Line 102" y1="-0.43752" x2="2.4381" y2="-0.43752" transform="matrix(-0.950181 0.311698 0.311698 0.950181 15.877 7.31616)" stroke="black" stroke-width="0.875039"/>
+</g>
+</g>
+</g>
+</svg>

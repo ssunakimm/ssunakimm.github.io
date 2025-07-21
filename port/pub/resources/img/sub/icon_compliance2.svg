@@ -1,0 +1,24 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_687_963" fill="white">
+<rect x="14.5" y="36" width="25" height="8" rx="2"/>
+</mask>
+<rect x="14.5" y="36" width="25" height="8" rx="2" stroke="#131B2C" stroke-width="4.8" mask="url(#path-1-inside-1_687_963)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 41V38H23L23 41L21 41ZM26 41V38H28V41L26 41ZM31 38V41L33 41V38H31Z" fill="#131B2C"/>
+<mask id="path-3-inside-2_687_963" fill="white">
+<rect x="19.5" y="29" width="25" height="8" rx="2"/>
+</mask>
+<rect x="19.5" y="29" width="25" height="8" rx="2" stroke="#131B2C" stroke-width="4.8" mask="url(#path-3-inside-2_687_963)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26 34V31H28L28 34L26 34ZM31 34V31H33V34L31 34ZM36 31V34L38 34V31H36Z" fill="#131B2C"/>
+<mask id="path-5-inside-3_687_963" fill="white">
+<rect x="14.5" y="23" width="25" height="8" rx="2"/>
+</mask>
+<rect x="14.5" y="23" width="25" height="8" rx="2" stroke="#131B2C" stroke-width="4.8" mask="url(#path-5-inside-3_687_963)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 28V25H23L23 28L21 28ZM26 28V25H28V28L26 28ZM31 25V28L33 28V25H31Z" fill="#131B2C"/>
+<mask id="path-7-inside-4_687_963" fill="white">
+<rect x="20.5" y="16" width="25" height="8" rx="2"/>
+</mask>
+<rect x="20.5" y="16" width="25" height="8" rx="2" stroke="#131B2C" stroke-width="4.8" mask="url(#path-7-inside-4_687_963)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27 21V18H29L29 21L27 21ZM32 21V18H34V21L32 21ZM37 18V21L39 21V18H37Z" fill="#131B2C"/>
+<circle cx="30" cy="30" r="22.8" stroke="#004098" stroke-width="2.4"/>
+<path d="M47 15L15 47" stroke="#004098" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
