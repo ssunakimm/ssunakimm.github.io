@@ -14,14 +14,14 @@ http://scripts.sil.org/OFL
     font-style: normal;
     font-weight: 100;
 	font-display: swap;
-    src: local('Noto Sans Thin'), local('Noto Sans-Thin'), url('/resources/font/NotoSans-Thin.woff') format('woff') ;
+    src: local('Noto Sans Thin'), local('Noto Sans-Thin'), url('./font/NotoSans-Thin.woff') format('woff') ;
 }
 @font-face {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 300;
 	font-display: swap;
-    src: local('Noto Sans Light'), local('Noto Sans-Light'), url('/resources/font/NotoSans-Light.woff') format('woff');
+    src: local('Noto Sans Light'), local('Noto Sans-Light'), url('./font/NotoSans-Light.woff') format('woff');
 }
 
 @font-face {
@@ -29,21 +29,21 @@ http://scripts.sil.org/OFL
     font-style: normal;
     font-weight: 400;
 	font-display: swap;
-    src: local('Noto Sans Regular'), local('Noto Sans-Regular'), url('/resources/font/NotoSans-Regular.woff') format('woff');
+    src: local('Noto Sans Regular'), local('Noto Sans-Regular'), url('./font/NotoSans-Regular.woff') format('woff');
 }
 @font-face {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 500;
 	font-display: swap;
-    src: local('Noto Sans Medium'), local('Noto Sans-Medium'), url('/resources/font/NotoSans-Medium.woff') format('woff');
+    src: local('Noto Sans Medium'), local('Noto Sans-Medium'), url('./font/NotoSans-Medium.woff') format('woff');
 }
 @font-face {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
 	font-display: swap;
-    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url('/resources/font/NotoSans-Bold.woff') format('woff');
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url('./font/NotoSans-Bold.woff') format('woff');
 }
 
 /* Pretendard */
@@ -52,32 +52,32 @@ http://scripts.sil.org/OFL
     font-style: normal;
 	font-weight: 100;
 	font-display: swap;
-	src: local('Pretendard Thin'), url('/resources/font/Pretendard-Thin.woff') format('woff');
+	src: local('Pretendard Thin'), url('./font/Pretendard-Thin.woff') format('woff');
 }
 @font-face {
 	font-family: 'Pretendard';
     font-style: normal;
 	font-weight: 300;
 	font-display: swap;
-	src: local('Pretendard Light'), url('/resources/font/Pretendard-Light.woff') format('woff');
+	src: local('Pretendard Light'), url('./font/Pretendard-Light.woff') format('woff');
 }
 @font-face {
 	font-family: 'Pretendard';
     font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: local('Pretendard Regular'), url('/resources/font/Pretendard-Regular.woff') format('woff');
+	src: local('Pretendard Regular'), url('./font/Pretendard-Regular.woff') format('woff');
 }
 @font-face {
 	font-family: 'Pretendard';
     font-style: normal;
 	font-weight: 500;
 	font-display: swap;
-	src: local('Pretendard Medium'), url('/resources/font/Pretendard-Medium.woff') format('woff');
+	src: local('Pretendard Medium'), url('./font/Pretendard-Medium.woff') format('woff');
 }
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 700;
 	font-display: swap;
-	src: local('Pretendard Bold'), url('/resources/font/Pretendard-Bold.woff') format('woff');
+	src: local('Pretendard Bold'), url('./font/Pretendard-Bold.woff') format('woff');
 }
