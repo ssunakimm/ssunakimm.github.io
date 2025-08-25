@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-@import url("../css/font.css");
-@import url("../css/reset.css");
-@import url("../css/common.css?v1.2");
-@import url("../css/utils.css");
+@import url("./css/font.css");
+@import url("./css/reset.css");
+@import url("./css/common.css?v1.2");
+@import url("./css/utils.css");
 
 
 :root {
@@ -14,4 +14,5 @@
     --grey01 : #6B6E72;
     --grey02 : #F1F3F5;
     --orange : #ff6d01;
+
 }
