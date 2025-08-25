@@ -2,13 +2,15 @@ let body;
 let dim
 $(document).ready(function () {
 
+    $("html, body").css("overflow-y","hidden");
     // intro
     setTimeout(function () {
         $(".intro").animate({
             top: '-300px',
             opacity: 0
         }, 400, function () {
-            $(".intro").css("display", "none");
+            $(".intro").css("display", "none");            
+            $("html, body").css("overflow-y","auto");
         });
     }, 7000);
 
